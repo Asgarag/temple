@@ -11,21 +11,32 @@ nav.menu
 				{ name:'Библиотека', hidden: ['Библия', 'Богословие', 'Статьи', 'Жития святых', 'Художественная классика', 'Иконопись']},
 				{ name:'Прихожанину', hidden: ['Святыни и иконы', 'Расписание богослужений', 'Предстоящие события', 'Тюремное служение',
 				'Социальное служение', 'Молодежное служение', 'Катехизация', 'Часто задаваемые вопросы', 'Православный календарь']},
-				{ name:'Воскресная', hidden: ['О Воскресной школе', 'Новости школы', 'Фото и видео']},
+				{ name:'Воскресная школа', hidden: ['О Воскресной школе', 'Новости школы', 'Фото и видео']},
 				{ name:'Контакты'}]
+			li.menu__list-item
+				button.button.menu__close
+					svg.menu__icon
+						use(xlink:href="images/sprite.svg#icon-close")
 			for elem in menu
 				li.menu__list-item
 					if elem.hidden
 						span.menu__link #{elem.name}
 						ul.list.menu__list-hidden
 							for elem1 in elem.hidden
-								li.menu__list-item: a.menu__hidden-link(href="#") #{elem1}
+								li.menu__list-hidden-item: a.menu__hidden-link(href="#") #{elem1}
+						svg.menu__icon.menu__icon-accordion
+							use(xlink:href="images/sprite.svg#icon-arrow-point-to-down")
 					else
 						a.menu__link(href="#") #{elem.name}
 		div.menu__buttons
-			button.button.menu__search
+			button.button.menu__search-button
 				svg.menu__icon
 					use(xlink:href="images/sprite.svg#icon-search")
 			button.button.menu__switch
 				svg.menu__icon
 					use(xlink:href="images/sprite.svg#icon-menu")
+		form.menu__search(action="#", name="search")
+			label.field.menu__search-field
+				span.field__hint Поиск
+				input.field__input.menu__search-input(name="search", placeholder="Поиск по сайту..." required)
+			button.button.button--middle.button--blue.menu__search-submit Искать

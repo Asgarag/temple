@@ -13,21 +13,21 @@
 	box-sizing: border-box;
 	padding: 1rem 1.5rem;
 	width: 100%;
-	border: 1px solid $gray;
+	border: 2px solid $gray;
 	font-family: inherit;
 	appearance: none;
 	transition: border-color .25s;
 
 	&::-moz-placeholder {
-		color: #ccc;
+		color: $gray;
 	}
 
 	&::-webkit-input-placeholder {
-		color: #ccc;
+		color: $gray;
 	}
 
 	&:focus {
-		border: 1px solid $green;
+		border-color: $blue;
 		outline: none;
 	}
 }

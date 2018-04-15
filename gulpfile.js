@@ -52,7 +52,7 @@ gulp.task('images', function () {
 });
 
 gulp.task('scripts', function () {
-	return gulp.src(['src/js/index/js'])
+	return gulp.src(['src/js/index.js'])
 			.pipe(rigger())
 			.pipe(gulp.dest('build/js'))
 			.pipe(server.reload({stream: true}));
@@ -107,7 +107,7 @@ gulp.task('serve', ['layout', 'styles', 'scripts', 'images', 'fonts', 'svgstore'
 
 	gulp.watch('src/**/*.{scss,sass}', ['styles']);
 	gulp.watch(['src/**/pages/*.pug','src/**/pages/layout/*.pug'], ['layout']);
-	gulp.watch('src/**/*.js', ['scripts']);
+	gulp.watch(['src/**/*.js', 'src/**/parts/*.js'], ['scripts']);
 	gulp.watch(['src/**/*.+(jpg,png)', 'src/**/**/*.+(jpg,png)'], ['images']);
 	gulp.watch('src/**/*.+(woff,woff2)', ['fonts']);
 	gulp.watch('src/**/**/*.svg', ['svgstore']);
