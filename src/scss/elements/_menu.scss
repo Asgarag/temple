@@ -1,0 +1,44 @@
+@import "../variables";
+
+.menu {
+	border-top: 2px solid $light-blue;
+	border-bottom: 2px solid $light-blue;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+}
+
+.menu__container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu__list {
+	display: flex;
+}
+
+.menu__list-item:not(:last-child) {
+	margin-right: 4.5rem;
+}
+
+.menu__link {
+	text-decoration: none;
+	color: $blue;
+
+	&:hover {
+		color: $black;
+	}
+}
+
+.menu__list-hidden {
+	display: none;
+}
+
+.menu__switch {
+	display: none;
+}
+
+.menu__icon {
+	width: 18px;
+	height: 18px;
+	fill: $blue;
+}

@@ -1,0 +1,17 @@
+@import "../variables";
+
+@media (min-width: 1030px) {
+
+	.page {
+		background: url("../images/pattern_background.jpg");
+	}
+
+	.page__container {
+		margin-right: auto;
+		margin-left: auto;
+		max-width: 1030px;
+		box-shadow: 0 2px 44px 18px rgba(20, 98, 149, 0.5);
+		background-color: $white;
+		border: solid 1px $light-blue;
+	}
+}
