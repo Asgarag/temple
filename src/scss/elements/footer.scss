@@ -1,0 +1,89 @@
+@import "../variables";
+
+.footer {
+	margin-top: 11rem;
+	border-top: 2px solid $light-blue;
+	padding-top: 6rem;
+	padding-bottom: 10rem;
+}
+
+.footer__container {
+	font-size: 1.2rem;
+}
+
+.footer__caption {
+	display: block;
+	margin-bottom: 2rem;
+}
+
+.footer__contacts {
+	display: block;
+	margin-bottom: 2rem;
+}
+
+.footer__copyright {
+	display: block;
+	margin-bottom: .5rem;
+}
+
+.footer__menu-list-item:not(:last-child) {
+	margin-bottom: .5rem;
+}
+
+.footer__menu-link {
+	color: $black;
+
+	&:hover, &:focus {
+		text-decoration: none;
+	}
+}
+
+.footer__other-link {
+	display: block;
+	margin-top: 4rem;
+	color: $black;
+	font-size: 1.4rem;
+	text-transform: uppercase;
+
+	&:hover, &:focus {
+		text-decoration: none;
+	}
+}
+
+.footer__social {
+	display: block;
+
+	&:hover > .footer__icon {
+		fill: $light-blue;
+	}
+}
+
+.footer__icon {
+	width: 25px;
+	height: 25px;
+	fill: $blue;
+}
+
+@media (max-width: 550px) {
+
+	.footer__description {
+		margin-bottom: 1rem;
+	}
+
+	.footer__menu:first-of-type {
+		margin-bottom: .5rem;
+	}
+}
+
+@media (min-width: 550px) {
+
+	.footer__container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.footer__description {
+		max-width: 30%;
+	}
+}
+

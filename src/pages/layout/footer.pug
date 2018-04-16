@@ -1,3 +1,28 @@
 footer.footer
-	div.footer__column
-		span.
+	div.container.footer__container
+		div.footer__description
+			span.footer__caption.
+				Храм святителя Николая, архиепископа мирликийского,
+				чудотворца
+				(с) 2014-2018
+			span.footer__contacts г. Пенза, ул. Терновского,  129, +7(8412) 36-09-30
+			span.footer__copyright.
+				При использовании материалов сайта ссылка
+				на источник обязательна.
+			a.footer__social(href="#")
+				svg.footer__icon
+					use(xlink:href="images/sprite.svg#icon-vk")
+		-
+			var footer__menu1 = ['Летопись храма', 'Новости', 'Проповедь', 'Библиотека', 'Прихожанину', 'Воскресная школа']
+			var footer__menu2 = ['Православное христианство', 'Пензенская епархия', 'Русская православная церковь']
+		nav.footer__menu
+			ul.list.footer__menu-list
+				for elem in footer__menu1
+					li.footer__menu-list-item
+						a.footer__menu-link(href="#") #{elem}
+		nav.footer__menu
+			ul.list.footer__menu-list
+				for elem in footer__menu2
+					li.footer__menu-list-item
+						a.footer__menu-link(href="#") #{elem}
+			a.footer__other-link(href="#") Полезные ссылки

@@ -1,5 +1,15 @@
 @import "../variables";
 
+.page__container {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.page__inner {
+	flex-grow: 1;
+}
+
 @media (min-width: 1030px) {
 
 	.page {

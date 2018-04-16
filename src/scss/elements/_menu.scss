@@ -100,7 +100,7 @@
 		}
 	}
 
-	.menu__link, .menu__hidden-link {
+	.menu__link {
 		display: block;
 		padding: 2rem;
 		font-size: 1.8rem;
@@ -114,6 +114,17 @@
 			fill: $white;
 		}
 	}
+
+  	.menu__hidden-link {
+		display: block;
+		padding: 2rem;
+		font-size: 1.8rem;
+
+		&:hover, &:focus {
+			background-color: $blue;
+			color: $white;
+		}
+  	}
 
 	.menu {
 		padding-top: 1rem;
