@@ -105,41 +105,90 @@
                 <label class="field menu__search-field"><span class="field__hint">Поиск</span>
                   <input class="field__input menu__search-input" name="search" placeholder="Поиск по сайту..." required>
                 </label>
-                <button class="button button--middle button--blue menu__search-submit">Искать</button>
+                <button class="button button--small button--blue menu__search-submit">Искать</button>
               </form>
             </div>
           </nav>
-          <main class="main">
-            <div class="section">
-              <!--div.owl-carousel-->
-              <!--	div.owl-carousel__imgbox-->
-              <!--		img.owl-carousel__img(src="images/delete/main_slider_photo.jpg")-->
-              <!--		div.owl-carousel__description-->
-              <!--			p.-->
-              <!--				Обращение настоятеля храма к прихожанам.-->
-              <!--				В карусель также можно вынести самые важные новости, статьи, объявления, праздники.-->
-              <!--	div.owl-carousel__imgbox-->
-              <!--		img.owl-carousel__img(src="images/delete/news-1.jpg")-->
-              <!--		div.owl-carousel__description-->
-              <!--			p.-->
-              <!--				Обращение настоятеля храма к прихожанам.-->
-              <!--				В карусель также можно вынести самые важные новости, статьи, объявления, праздники.-->
-              <!--	div.owl-carousel__imgbox-->
-              <!--		img.owl-carousel__img(src="images/delete/news-2.jpg")-->
-              <!--		div.owl-carousel__description-->
-              <!--			p.-->
-              <!--				Обращение настоятеля храма к прихожанам.-->
-              <!--				В карусель также можно вынести самые важные новости, статьи, объявления, праздники.-->
-            </div>
-            <article class="calendar">
-              <h2 class="title title--s calendar__title">Сегодня</h2>
-              <div class="calendar__container">
-                <div class="calendar__date">
-                  <time class="calendar__new-date" datetime="2018-02-01"><span class="calendar__date-day">1</span><span class="calendar__date-month">февраля</span></time>
-                  <time class="calendar__old-date" datetime="2018-01-19"><span class="calendar__date-day">19</span><span class="calendar__date-month">января</span><span class="calendar__old-date-name">ст.ст.</span></time>
-                </div><span class="calendar__name-day">четверг</span><span class="calendar__name-week">Седмица сплошная</span><span class="calendar__fasting">Поста нет</span>
+          <main class="main container">
+            <div class="main__inner">
+              <div class="owl-carousel main__owl-carousel">
+                <div class="owl-carousel__imgbox"><img class="owl-carousel__img" src="images/delete/main_slider_photo_ch.jpg">
+                  <div class="owl-carousel__description">
+                    <p>
+                      Обращение настоятеля храма к прихожанам.
+                      В карусель также можно вынести самые важные новости, статьи, объявления, праздники.
+                    </p>
+                  </div>
+                </div>
+                <div class="owl-carousel__imgbox"><img class="owl-carousel__img" src="images/delete/news-1-ch.jpg">
+                  <div class="owl-carousel__description">
+                    <p>
+                      Обращение настоятеля храма к прихожанам.
+                      В карусель также можно вынести самые важные новости, статьи, объявления, праздники.
+                    </p>
+                  </div>
+                </div>
+                <div class="owl-carousel__imgbox"><img class="owl-carousel__img" src="images/delete/news-2-ch.jpg">
+                  <div class="owl-carousel__description">
+                    <p>
+                      Обращение настоятеля храма к прихожанам.
+                      В карусель также можно вынести самые важные новости, статьи, объявления, праздники.
+                    </p>
+                  </div>
+                </div>
               </div>
-            </article>
+              <article class="calendar main__calendar">
+                <h2 class="title title--m title--line">Сегодня</h2>
+                <div class="calendar__container">
+                  <div class="calendar__date">
+                    <time class="calendar__new-date" datetime="2018-02-01"><span class="calendar__date-day">1</span><span class="calendar__date-month">февраля</span></time>
+                    <time class="calendar__old-date" datetime="2018-01-19"><span class="calendar__date-day">19</span><span class="calendar__date-month">января</span><span class="calendar__old-date-name">ст.ст.</span></time>
+                  </div><span class="calendar__name-day">четверг</span><span class="calendar__name-week">Седмица сплошная</span><span class="calendar__fasting">Поста нет</span>
+                </div>
+              </article>
+            </div>
+            <div class="main__inner">
+              <article class="schedule main__schedule">
+                <h2 class="title title--m title--line">Расписание богослужений</h2>
+                <div class="schedule__container">
+                  <div class="schedule__days">
+                    <h3 class="title title--s schedule__days-title">по будням</h3>
+                    <ul class="list schedule__list"></ul>
+                    <div class="schedule__list-item"><span class="schedule__time">07:30</span><span class="schedule__name"> - исповедь</span></div>
+                    <div class="schedule__list-item"><span class="schedule__time">08:00</span><span class="schedule__name"> - Литургия</span></div>
+                    <div class="schedule__list-item"><span class="schedule__time">17:00</span><span class="schedule__name"> - вечерняя служба (накануне)</span></div>
+                  </div>
+                  <div class="schedule__days">
+                    <h3 class="title title--s schedule__days-title">по праздничным и воскресным дням</h3>
+                    <ul class="list schedule__list"></ul>
+                    <div class="schedule__list-item"><span class="schedule__time">06:30</span><span class="schedule__name"> - исповедь</span></div>
+                    <div class="schedule__list-item"><span class="schedule__time">07:00</span><span class="schedule__name"> - Литургия (ранняя)</span></div>
+                    <div class="schedule__list-item"><span class="schedule__time">08:30</span><span class="schedule__name"> - исповедь</span></div>
+                    <div class="schedule__list-item"><span class="schedule__time">09:00</span><span class="schedule__name"> - Литургия (поздняя)</span></div>
+                    <div class="schedule__list-item"><span class="schedule__time">17:00</span><span class="schedule__name"> - вечерняя бдение (накануне)</span></div>
+                  </div>
+                </div>
+              </article>
+              <article class="sacrifice sacrifice--big main__sacrifice"><span class="sacrifice__preface">Дорогие братья и сестры!</span>
+                <div class="sacrifice__text">
+                  <p>Молитвенно просим Вас внести свою лепту в дело возрождения исторической и духовной святыни - храма в честь святителя Николая чудотворца.</p>
+                </div>
+                <button class="button button--blue button--middle sacrifice__button">Пожертвовать</button>
+              </article>
+            </div>
+            <div class="main__inner">
+              <div class="quote main__quote">
+                <svg class="quote__icon">
+                  <use xlink:href="images/sprite.svg#icon-quotation-mark"></use>
+                </svg><span class="quote__text">Посылаемое все надобно принимать, как от руки Господней: скорбное ли - к терпению, приятное ли - к благодарению.</span><span class="qoute__author">прп. Моисей Оптинский</span>
+              </div>
+              <div class="question question--big main__question">
+                <button class="button question__button" type="button">Задать вопрос настоятелю</button>
+                <svg class="question__icon">
+                  <use xlink:href="images/sprite.svg#icon-question"></use>
+                </svg>
+              </div>
+            </div>
           </main>
         </div>
         <footer class="footer">

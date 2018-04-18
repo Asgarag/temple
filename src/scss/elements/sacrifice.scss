@@ -1,0 +1,32 @@
+@import "../variables";
+
+.sacrifice {
+	padding: 3rem 3.5rem;
+	border: solid 3px $blue;
+	background-color: $beige;
+	box-sizing: border-box;
+}
+
+.sacrifice__preface {
+	display: block;
+	font-weight: 700;
+	margin-bottom: 1rem;
+}
+
+.sacrifice__text {
+	margin-bottom: 2rem;
+}
+
+@media (max-width: 767px) {
+
+	.sacrifice--big {
+		max-width: 275px;
+	}
+}
+
+@media (min-width: 768px) {
+
+	.sacrifice--big {
+		max-width: 300px;
+	}
+}

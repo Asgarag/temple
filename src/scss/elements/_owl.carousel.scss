@@ -1,11 +1,5 @@
-/**
- * Owl Carousel v2.3.3
- * Copyright 2013-2018 David Deutsch
- * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
- */
-/*
- *  Owl Carousel - Core
- */
+@import "../variables";
+
 .owl-carousel {
 	display: none;
 	width: 100%;
@@ -80,9 +74,7 @@
 	user-select: none;
 }
 
-.owl-carousel .owl-nav button.owl-prev,
-.owl-carousel .owl-nav button.owl-next,
-.owl-carousel button.owl-dot {
+.owl-prev, .owl-next, .owl-dot {
 	background: none;
 	color: inherit;
 	border: none;
@@ -230,4 +222,98 @@
 	z-index: 1;
 	height: 100%;
 	width: 100%;
+}
+
+.owl-dots {
+	margin-top: 1rem;
+	text-align: center;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.owl-dots .owl-dot {
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+}
+
+.owl-dots .owl-dot span {
+	width: 10px;
+	height: 10px;
+	margin: 5px 7px;
+	background: #D6D6D6;
+	display: block;
+	-webkit-backface-visibility: visible;
+	transition: opacity 200ms ease;
+	border-radius: 30px;
+}
+
+.owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+	background: #869791;
+}
+
+.owl-carousel__imgbox {
+	position: relative;
+}
+
+.owl-carousel__img {
+	height: 300px;
+	display: block;
+}
+
+.owl-carousel__description {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	color: $white;
+	background: rgba($blue, .8);
+	padding: 2rem 4rem 2rem 2rem;
+	font-weight: 700;
+}
+
+.owl-nav {
+	position: absolute;
+	right: 8px;
+	top: 8px;
+}
+
+.owl-prev {
+	width: 25px;
+	height: 25px;
+	background-image: url("../images/left-arrow.svg");
+	margin-right: 1rem;
+
+	&:hover {
+		opacity: .8;
+	}
+}
+
+.owl-next {
+	width: 25px;
+	height: 25px;
+	background-image: url("../images/right-arrow.svg");
+
+	&:hover {
+		opacity: .8;
+	}
+}
+
+@media (min-width: 480px) {
+
+	.owl-carousel__description {
+		font-size: 1.6rem;
+	}
+}
+
+@media (min-width: 840px) and (max-width: 1029px) {
+
+	.owl-carousel {
+		max-width: 500px;
+	}
+}
+
+@media (min-width: 1030px) {
+
+	.owl-carousel {
+		max-width: 700px;
+	}
 }

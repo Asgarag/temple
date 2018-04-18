@@ -5,23 +5,39 @@
 	margin-bottom: 0;
 }
 
-.title--xxl {
-	font-size: 4.8rem;
-}
+.title--line {
+	position: relative;
+	margin-bottom: 2rem;
+	padding-bottom: 1.2rem;
 
-.title--xl {
-	font-size: 3.6rem;
-}
+	&::after {
+		content: '';
+		width: calc(100% - 20px);
+		max-width: 228px;
+		position: absolute;
+		bottom: 2px;
+		left: 20px;
+		height: 1px;
+		background-color: $gray;
+	}
 
-.title--l {
-	font-size: 3.2rem;
+	&::before {
+		content: '';
+		position: absolute;
+		width: 7px;
+		height: 7px;
+		bottom: 0;
+		left: 2px;
+		background-color: $gray;
+		transform: rotate(45deg);
+	}
 }
 
 .title--m {
-	font-size: 2.4rem;
+	font-size: 1.8rem;
 }
 
 .title--s {
-	font-size: 1.8rem;
+	font-size: 1.4rem;
 }
 

@@ -11,9 +11,14 @@
 		outline: none;
 	}
 
-	&--middle {
+	&--small {
 		border-radius: 4px;
 		padding: 1rem 2rem;
+	}
+
+	&--middle {
+		border-radius: 4px;
+		padding: 1.5rem 5.8rem;
 	}
 
 	&--blue {

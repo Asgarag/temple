@@ -1,0 +1,19 @@
+@import "../variables";
+
+.quote__icon {
+	width: 29px;
+	height: 25px;
+	fill: $gray;
+	margin-right: .5rem;
+}
+
+.quote__text {
+	font-style: italic;
+}
+
+.qoute__author {
+	display: block;
+	margin-top: 2rem;
+	font-size: 1.2rem;
+	font-weight: 700;
+}

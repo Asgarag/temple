@@ -4,42 +4,16 @@
 	width: 220px;
 }
 
-.calendar__title {
-	position: relative;
-	margin-bottom: 3rem;
-
-	&::after {
-		content: '';
-		width: calc(100% - 20px);
-		position: absolute;
-		bottom: -10px;
-		right: 0;
-		height: 2px;
-		background-color: $gray;
-	}
-
-	&::before {
-		content: '';
-		position: absolute;
-		width: 9px;
-		height: 9px;
-		bottom: -12px;
-		left: 2px;
-		background-color: $gray;
-		transform: rotate(45deg);
-	}
-}
-
 .calendar__container {
-	padding: 2.5rem 2rem;
-	background-color: #faf6f6;
+	padding: 2rem;
+	background-color: $beige;
 	text-align: center;
 }
 
 .calendar__date {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 2rem;
+	margin-bottom: 1rem;
 }
 
 .calendar__new-date {
@@ -50,7 +24,6 @@
 		content: '';
 		position: absolute;
 		top: 50%;
-		right: -25px;
 		transform: translateY(-63%) rotate(20deg);
 		background-color: #efe7e7;
 		height: 66px;
@@ -82,7 +55,7 @@
 	position: relative;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
-	margin-bottom: 2rem;
+	margin-bottom: 1rem;
 
 	&::after, &::before {
 		content: '';
@@ -105,5 +78,19 @@
 
 .calendar__name-week {
 	display: block;
-	margin-bottom: 2rem;
+	margin-bottom: 1.9rem;
+}
+
+@media (max-width: 767px) {
+
+	.calendar__new-date::after {
+		right: -34px;
+	}
+}
+
+@media (min-width: 768px) {
+
+	.calendar__new-date::after {
+		right: -25px;
+	}
 }

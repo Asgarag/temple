@@ -1,0 +1,70 @@
+@import "../variables";
+
+.main {
+	margin-top: 4rem;
+}
+
+.main__inner:not(:last-child) {
+	margin-bottom: 4rem;
+}
+
+@media (max-width: 839px) {
+
+	.main__owl-carousel {
+		margin-bottom: 2rem;
+	}
+
+	.main__schedule {
+		margin-bottom: 3rem;
+	}
+
+	.main__sacrifice {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.main__quote {
+		margin-bottom: 2rem;
+	}
+
+	.main__question {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media (min-width: 840px) {
+
+	.main__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.main__owl-carousel {
+		margin-right: 2rem;
+	}
+
+	.main__schedule {
+		margin-right: 3rem;
+	}
+
+	.main__quote {
+		margin-right: 2rem;
+	}
+}
+
+@media (min-width: 840px) and (max-width: 1029px) {
+
+	.main__owl-carousel {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media (max-width: 1029px) {
+
+	.main__calendar {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
