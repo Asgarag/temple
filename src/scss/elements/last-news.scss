@@ -1,0 +1,75 @@
+@import "../variables";
+
+.last-news__tabs {
+	padding-top: 2rem;
+	font-size: 1.2rem;
+	display: flex;
+	margin-bottom: 4rem;
+}
+
+.last-news__tab {
+	color: $blue;
+
+	&:hover,
+	&:focus {
+		text-decoration: none;
+	}
+
+	&:not(:last-child) {
+		margin-right: 2rem;
+	}
+}
+
+.last-news__active-tab {
+	color: $gray;
+}
+
+.last-news__group {
+	margin-bottom: 3rem;
+}
+
+.last-news__post:not(:last-of-type) {
+	margin-bottom: 5rem;
+}
+
+.last-news__post-header {
+	margin-bottom: 1.5rem;
+}
+
+.last-news__date {
+	display: block;
+	color: $gray;
+	margin-bottom: 1.5rem;
+}
+
+.last-news__link {
+	color: $black;
+	text-decoration: none;
+
+	&:hover,
+	&:focus {
+		color: $blue;
+	}
+}
+
+.last-news__description {
+	font-weight: 300;
+}
+
+@media (max-width: 479px) {
+	.last-news__imgbox {
+		margin-bottom: 1rem;
+	}
+}
+
+@media (min-width: 480px) {
+	.last-news__post-header {
+		display: flex;
+	}
+
+	.last-news__imgbox {
+		max-width: 200px;
+		margin-right: 2rem;
+		flex-shrink: 0;
+	}
+}

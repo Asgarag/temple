@@ -24,7 +24,7 @@ block content
 							В карусель также можно вынести самые важные новости, статьи, объявления, праздники.
 			article.calendar.main__calendar
 				h2.title.title--m.title--line Сегодня
-				div.calendar__container
+				a.calendar__container(href="#")
 					div.calendar__date
 						time.calendar__new-date(datetime="2018-02-01")
 							span.calendar__date-day 1
@@ -41,7 +41,7 @@ block content
 				h2.title.title--m.title--line Расписание богослужений
 				div.schedule__container
 					div.schedule__days
-						h3.title.title--s.schedule__days-title по будням
+						span.schedule__days-name по будням
 						-
 							var schedule__weekdays = [
 							{times: '07:30', name:'исповедь'},
@@ -54,7 +54,7 @@ block content
 								span.schedule__time #{elem.times}
 								span.schedule__name  - #{elem.name}
 					div.schedule__days
-						h3.title.title--s.schedule__days-title по праздничным и воскресным дням
+						span.schedule__days-name по праздничным и воскресным дням
 						-
 							var schedule__holidays = [
 							{times: '06:30', name:'исповедь'},
@@ -70,8 +70,7 @@ block content
 								span.schedule__name  - #{elem.name}
 			article.sacrifice.sacrifice--big.main__sacrifice
 				span.sacrifice__preface Дорогие братья и сестры!
-				div.sacrifice__text
-					p Молитвенно просим Вас внести свою лепту в дело возрождения исторической и духовной святыни - храма в честь святителя Николая чудотворца.
+				span.sacrifice__text Молитвенно просим Вас внести свою лепту в дело возрождения исторической и духовной святыни - храма в честь святителя Николая чудотворца.
 				button.button.button--blue.button--middle.sacrifice__button Пожертвовать
 		div.main__inner
 			div.quote.main__quote
@@ -83,3 +82,104 @@ block content
 				button.button.question__button(type="button") Задать вопрос настоятелю
 				svg.question__icon
 					use(xlink:href="images/sprite.svg#icon-question")
+		div.main__inner
+			section.last-news.main__last-news
+				h2.title.title--m.title--line.last-news__title Последние новости
+				div.last-news__tabs
+					span.last-news__tab.last-news__active-tab новости храма
+					a.last-news__tab(href="#") новости епархии
+					a.last-news__tab(href="#") новости патриархии
+					a.last-news__tab(href="#") сми о нас
+				div.last-news__group
+					-
+						var news = [
+						{date: '28 января 2018 г.',
+						title: 'Иерей Сергий Беляков принял участие в спортивном празднике «Зимушка-зима»',
+						description: 'В воскресенье, 28 января 2018 года, ' +
+						'в Пензенском Центральном парке культуры и отдыха имени В.Г.' +
+						'Белинского состоялся большой спортивный праздник «Зимушка-зима».',
+						img: 1,
+						alt1: "Люди на празднике",
+						date_1: "2018-01-28"},
+						{date: '27 января 2018 г.',
+						title: 'Протоиерей Александр Филиппов совершил водосвятный молебен с акафистом Божией Матери перед ее чудотворным образом "Неупиваемая чаша".',
+						description: 'В субботу 27 января 2018 года, по завершении Божественной Литургии, настоятель нашего храма протоиерей Александр Филиппов совершил водосвятный молебен с акафистом Божией Матери перед ее чудотворным образом "Неупиваемая чаша".',
+						img: 2,
+						alt1: "Священники перед чашей",
+						date_1: "2018-01-27"},
+						{date: '28 января 2018 г.',
+						title: 'Иерей Сергий Беляков принял участие в спортивном празднике «Зимушка-зима»',
+						description: 'В воскресенье, 28 января 2018 года, ' +
+						'в Пензенском Центральном парке культуры и отдыха имени В.Г.' +
+						'Белинского состоялся большой спортивный праздник «Зимушка-зима».',
+						img: 3,
+						alt1: "Люди на празднике",
+						date_1: "2018-01-28"},
+						{date: '27 января 2018 г.',
+						title: 'Иерей Сергий Беляков принял участие в спортивном празднике «Зимушка-зима»',
+						description: 'В субботу 27 января 2018 года, по завершении Божественной Литургии, настоятель нашего храма протоиерей Александр Филиппов совершил водосвятный молебен с акафистом Божией Матери перед ее чудотворным образом "Неупиваемая чаша".',
+						img: 4,
+						alt1: "Священники перед чашей",
+						date_1: "2018-01-27"}
+						]
+					for elem in news
+						article.last-news__post
+							header.last-news__post-header
+								div.last-news__imgbox
+									img.last-news__img(src="images/delete/news-" + elem.img + ".jpg", alt=elem.alt1)
+								div.last-news__inner
+									time.last-news__date(datetime="#{elem.date_1}") #{elem.date}
+									h3.title.title--s
+										a.last-news__link(href="#") #{elem.title}
+							div.last-news__description
+								p #{elem.description}
+				button.button.button--blue.button--middle Все новости
+			section.recommendation
+				-
+					var recommendation = [
+					{
+					author: 'Зигабен Евфимий',
+					title: 'Толкование Евангелия от Иоанна',
+					description: 'Толкование на Евангелия от Иоанна, составленные по древним святоотеческим толкованиям византийским, 12 века, ученым монахом Евфимием Зигабеном / перевод с греческого.'
+					},
+					{
+					author: 'Зигабен Евфимий',
+					title: 'Толкование Евангелия от Иоанна',
+					description: 'Толкование на Евангелия от Иоанна, составленные по древним святоотеческим толкованиям византийским, 12 века, ученым монахом Евфимием Зигабеном / перевод с греческого.'
+					},
+					{
+					author: 'Зигабен Евфимий',
+					title: 'Толкование Евангелия от Иоанна',
+					description: 'Толкование на Евангелия от Иоанна, составленные по древним святоотеческим толкованиям византийским, 12 века, ученым монахом Евфимием Зигабеном / перевод с греческого.'
+					},
+					{
+					author: 'Зигабен Евфимий',
+					title: 'Толкование Евангелия от Иоанна',
+					description: 'Толкование на Евангелия от Иоанна, составленные по древним святоотеческим толкованиям византийским, 12 века, ученым монахом Евфимием Зигабеном / перевод с греческого.'
+					},
+					{
+					author: 'Зигабен Евфимий',
+					title: 'Толкование Евангелия от Иоанна',
+					description: 'Толкование на Евангелия от Иоанна, составленные по древним святоотеческим толкованиям византийским, 12 века, ученым монахом Евфимием Зигабеном / перевод с греческого.'
+					},
+					{
+					author: 'Зигабен Евфимий',
+					title: 'Толкование Евангелия от Иоанна',
+					description: 'Толкование на Евангелия от Иоанна, составленные по древним святоотеческим толкованиям византийским, 12 века, ученым монахом Евфимием Зигабеном / перевод с греческого.'
+					}
+					]
+				h2.title.title--m.title--line.recommendation__title Рекомендуем прочитать
+				div.recommendation__container
+					div.recommendation__group
+						for elem in recommendation
+							div.recommendation__item
+								span.recommendation__author #{elem.author}
+								h3.title.title--ms.recommendation__title #{elem.title}
+								div.recommendation__description
+									p #{elem.description}
+								div.recommendation__links
+									div.recommendation__linkbox
+										a.recommendation__link(href="#") Читать онлайн
+									div.recommendation__linkbox
+										a.recommendation__link(href="#") Скачать
+					button.button.button--blue.button--middle Все материалы

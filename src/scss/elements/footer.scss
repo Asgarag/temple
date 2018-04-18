@@ -23,17 +23,18 @@
 
 .footer__copyright {
 	display: block;
-	margin-bottom: .5rem;
+	margin-bottom: 0.5rem;
 }
 
 .footer__menu-list-item:not(:last-child) {
-	margin-bottom: .5rem;
+	margin-bottom: 0.5rem;
 }
 
 .footer__menu-link {
 	color: $black;
 
-	&:hover, &:focus {
+	&:hover,
+	&:focus {
 		text-decoration: none;
 	}
 }
@@ -45,7 +46,8 @@
 	font-size: 1.4rem;
 	text-transform: uppercase;
 
-	&:hover, &:focus {
+	&:hover,
+	&:focus {
 		text-decoration: none;
 	}
 }
@@ -65,18 +67,16 @@
 }
 
 @media (max-width: 550px) {
-
 	.footer__description {
 		margin-bottom: 1rem;
 	}
 
 	.footer__menu:first-of-type {
-		margin-bottom: .5rem;
+		margin-bottom: 0.5rem;
 	}
 }
 
 @media (min-width: 550px) {
-
 	.footer__container {
 		display: flex;
 		justify-content: space-between;
@@ -86,4 +86,3 @@
 		max-width: 30%;
 	}
 }
-

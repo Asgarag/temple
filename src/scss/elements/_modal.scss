@@ -1,0 +1,96 @@
+@import "../variables";
+
+.modal {
+	background-color: rgba($black, .7);
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	overflow-y: auto;
+	overflow-x: hidden;
+	display: none;
+	animation: appearance .4s;
+
+	&--active {
+		display: flex;
+	}
+}
+
+.modal__box {
+	margin: auto;
+	width: 90%;
+	padding-top: 35px;
+	padding-bottom: 35px;
+	max-width: 620px;
+}
+
+.modal__inner {
+	background-color: $white;
+	box-shadow: 0 0 36.8px 9.2px rgba(9, 12, 18, 0.3);
+	border: solid 2px $light-blue;
+}
+
+.modal__header {
+	padding: 2rem;
+	border-bottom: 1px solid $gray;
+	position: relative;
+}
+
+.modal__content {
+	padding: 2rem;
+}
+
+.modal__close {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	text-indent: -9999px;
+	width: 15px;
+	height: 15px;
+	transition: opacity .2s;
+
+	&:focus {
+		outline: none;
+	}
+
+	&::after, &::before {
+		content: "";
+		position: absolute;
+		width: 15px;
+		height: 2px;
+		background-color: $light-blue;
+		top: 7px;
+		right: 0;
+	}
+
+	&::before {
+		transform: rotate(45deg);
+	}
+
+	&::after {
+		transform: rotate(-45deg);
+	}
+
+	&:hover, &:focus {
+		opacity: .7;
+	}
+}
+
+.modal__footer {
+	border-top: 1px solid $gray;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 2rem;
+}
+
+.modal__cancel {
+	color: $blue;
+	margin-right: 1rem;
+
+	&:hover, &:focus {
+		opacity: .7;
+	}
+}

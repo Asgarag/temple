@@ -11,7 +11,7 @@
 	padding-bottom: 1.2rem;
 
 	&::after {
-		content: '';
+		content: "";
 		width: calc(100% - 20px);
 		max-width: 228px;
 		position: absolute;
@@ -22,7 +22,7 @@
 	}
 
 	&::before {
-		content: '';
+		content: "";
 		position: absolute;
 		width: 7px;
 		height: 7px;
@@ -37,7 +37,10 @@
 	font-size: 1.8rem;
 }
 
+.title--ms {
+	font-size: 1.6rem;
+}
+
 .title--s {
 	font-size: 1.4rem;
 }
-

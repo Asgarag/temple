@@ -43,7 +43,7 @@
 
 .menu__search-field {
 	flex-grow: 1;
-	margin-right: .7rem;
+	margin-right: 0.7rem;
 }
 
 .menu__search-submit {
@@ -52,7 +52,6 @@
 }
 
 @media (max-width: 479px) {
-
 	.menu__list {
 		width: 100vw;
 		left: -100vw;
@@ -60,7 +59,6 @@
 }
 
 @media (min-width: 480px) and (max-width: 949px) {
-
 	.menu__list {
 		width: 300px;
 		left: -300px;
@@ -68,7 +66,6 @@
 }
 
 @media (max-width: 949px) {
-
 	.menu__list {
 		position: fixed;
 		overflow-y: auto;
@@ -76,7 +73,7 @@
 		top: 0;
 		bottom: 0;
 		min-height: 100vh;
-		transition: left .6s;
+		transition: left 0.6s;
 		background-color: $white;
 		padding-left: 2rem;
 		padding-right: 2rem;
@@ -105,26 +102,29 @@
 		padding: 2rem;
 		font-size: 1.8rem;
 
-		&:hover, &:focus {
+		&:hover,
+		&:focus {
 			background-color: $blue;
 			color: $white;
 		}
 
-		&:hover ~ .menu__icon-accordion, &:focus ~ .menu__icon-accordion {
+		&:hover ~ .menu__icon-accordion,
+		&:focus ~ .menu__icon-accordion {
 			fill: $white;
 		}
 	}
 
-  	.menu__hidden-link {
+	.menu__hidden-link {
 		display: block;
 		padding: 2rem;
 		font-size: 1.8rem;
 
-		&:hover, &:focus {
+		&:hover,
+		&:focus {
 			background-color: $blue;
 			color: $white;
 		}
-  	}
+	}
 
 	.menu {
 		padding-top: 1rem;
@@ -155,7 +155,7 @@
 		position: absolute;
 		right: 10px;
 		top: 20px;
-		transition: transform .4s;
+		transition: transform 0.4s;
 
 		&--active {
 			transform: rotate(180deg);
@@ -164,7 +164,6 @@
 }
 
 @media (min-width: 950px) {
-
 	.menu__switch {
 		display: none;
 	}
@@ -181,6 +180,7 @@
 		border-right: 2px solid $light-blue;
 		background-color: $white;
 		transform: translateY(100%);
+		z-index: 2;
 
 		&--active {
 			display: flex;

@@ -3,4 +3,5 @@ $(document).ready(function () {
     //= parts/carousel.js
 	//= parts/search.js
 	//= parts/menu.js
+	//= parts/modal.js
 });

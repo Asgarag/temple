@@ -9,7 +9,6 @@
 }
 
 @media (max-width: 839px) {
-
 	.main__owl-carousel {
 		margin-bottom: 2rem;
 	}
@@ -31,10 +30,13 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
+
+	.main__last-news {
+		margin-bottom: 5rem;
+	}
 }
 
 @media (min-width: 840px) {
-
 	.main__inner {
 		display: flex;
 		justify-content: space-between;
@@ -51,10 +53,15 @@
 	.main__quote {
 		margin-right: 2rem;
 	}
+
+	.main__last-news {
+		width: 46%;
+		margin-right: 3%;
+		flex-shrink: 0;
+	}
 }
 
 @media (min-width: 840px) and (max-width: 1029px) {
-
 	.main__owl-carousel {
 		margin-left: auto;
 		margin-right: auto;
@@ -62,7 +69,6 @@
 }
 
 @media (max-width: 1029px) {
-
 	.main__calendar {
 		margin-left: auto;
 		margin-right: auto;

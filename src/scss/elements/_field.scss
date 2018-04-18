@@ -16,7 +16,7 @@
 	border: 2px solid $gray;
 	font-family: inherit;
 	appearance: none;
-	transition: border-color .25s;
+	transition: border-color 0.25s;
 
 	&::-moz-placeholder {
 		color: $gray;

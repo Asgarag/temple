@@ -12,29 +12,29 @@
 	color: $blue;
 	font-weight: 700;
 
-	&:hover, &:focus {
+	&:hover,
+	&:focus {
 		text-decoration: none;
 	}
 }
 
 .question__icon {
 	position: absolute;
-	right: 10px;
+	right: 20px;
 	top: 50%;
 	transform: translateY(-50%);
 	width: 30px;
 	height: 30px;
+	fill: #d4d2d7;
 }
 
 @media (max-width: 767px) {
-
 	.question--big {
 		max-width: 275px;
 	}
 }
 
 @media (min-width: 768px) {
-
 	.question--big {
 		width: 310px;
 	}

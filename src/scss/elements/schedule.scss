@@ -5,13 +5,14 @@
 	padding: 3rem 2.5rem;
 }
 
-.schedule__days-title {
+.schedule__days-name {
+	display: block;
 	font-weight: 700;
 	margin-bottom: 1rem;
 }
 
 .schedule__list-item:not(:last-child) {
-	margin-bottom: .5rem;
+	margin-bottom: 0.5rem;
 }
 
 .schedule__time {
@@ -19,7 +20,6 @@
 }
 
 @media (max-width: 479px) {
-
 	.schedule__container {
 		text-align: center;
 	}
@@ -30,13 +30,12 @@
 }
 
 @media (min-width: 480px) {
-
 	.schedule__days:first-child {
 		position: relative;
 		margin-right: 7rem;
 
 		&::after {
-			content: '';
+			content: "";
 			position: absolute;
 			width: 2px;
 			height: 120px;
@@ -53,14 +52,12 @@
 }
 
 @media (min-width: 480px) and (max-width: 839px) {
-
 	.schedule__container {
 		justify-content: center;
 	}
 }
 
 @media (min-width: 840px) {
-
 	.schedule__container {
 		justify-content: space-between;
 	}

@@ -14,18 +14,17 @@
 }
 
 .sacrifice__text {
+	display: block;
 	margin-bottom: 2rem;
 }
 
 @media (max-width: 767px) {
-
 	.sacrifice--big {
 		max-width: 275px;
 	}
 }
 
 @media (min-width: 768px) {
-
 	.sacrifice--big {
 		max-width: 300px;
 	}
