@@ -1,0 +1,31 @@
+extends layout/layout
+
+block title
+	title Настоятели
+
+block content
+	-
+		var breadcrumbs = [{name: 'Главная', flag: 1}, {name: 'Летопись Храма', flag: 0}, {name: 'Настоятели Храма', flag: 0}]
+		var abbots = ['с 1847 по 1880 год', 'с 1880 по 1895 год', 'с 1895 по 1910 год', 'с 1910 по 1930 год']
+	nav.breadcrumbs
+		ul.list.breadcrumbs__list
+			for elem in breadcrumbs
+				li.breadcrumbs__list-item
+					if elem.flag === 1
+						a.breadcrumbs__link(href="#") #{elem.name}
+					else
+						span.breadcrumbs__link-active #{elem.name}
+	div.page__inner
+		main.main
+			section.abbots
+				h2.title.title--line.title--m Настоятели Храма
+				for elem in abbots
+					div.abbots__item
+						div.abbots__avatarbox
+							img.abbots__avatar(src="/images/delete/contact-1.jpg", alt="Портрет Протоиерия Александра Филиппова")
+						div.abbots__inner
+							span.abbots__name Протоиерей Александр Филиппов
+							span.abbots__time #{elem}
+		include layout/sidebar
+
+

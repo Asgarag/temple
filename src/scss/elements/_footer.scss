@@ -4,7 +4,6 @@
 	margin-top: 11rem;
 	border-top: 2px solid $light-blue;
 	padding-top: 6rem;
-	padding-bottom: 10rem;
 }
 
 .footer__container {
@@ -74,6 +73,9 @@
 	.footer__menu:first-of-type {
 		margin-bottom: 0.5rem;
 	}
+	.footer {
+		padding-bottom: 4rem;
+	}
 }
 
 @media (min-width: 550px) {
@@ -84,5 +86,9 @@
 
 	.footer__description {
 		max-width: 30%;
+	}
+
+	.footer {
+		padding-bottom: 10rem;
 	}
 }

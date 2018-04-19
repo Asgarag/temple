@@ -1,0 +1,55 @@
+@import "../variables";
+
+.question {
+	background-color: $beige;
+	position: relative;
+	text-align: center;
+	box-sizing: border-box;
+
+	&--middle {
+		padding: 5rem 1.5rem 2rem;
+
+		.question__button {
+			font-size: 1.2rem;
+		}
+
+		.question__icon {
+			top: 1.5rem;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+
+	&--big {
+		padding: 3.5rem 5rem 3.5rem 2rem;
+
+		.question__icon {
+			right: 1.4rem;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+}
+
+.question__button {
+	text-transform: uppercase;
+	text-decoration: underline;
+	font-weight: 700;
+}
+
+.question__icon {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	fill: #d4d2d7;
+}
+
+@media (min-width: 840px) {
+	.question--middle {
+		max-width: 220px;
+	}
+
+	.question--big {
+		max-width: 310px;
+	}
+}

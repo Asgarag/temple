@@ -1,0 +1,25 @@
+@import "../variables";
+
+.breadcrumbs__list {
+	display: flex;
+	font-size: 1.2rem;
+	color: $gray;
+}
+
+.breadcrumbs__list-item:not(:last-child) {
+	margin-right: .5rem;
+
+	&::after {
+		content: '/';
+		color: inherit;
+		margin-left: .3rem;
+	}
+}
+
+.breadcrumbs__link {
+	color: inherit;
+
+	&:hover, &:focus {
+		text-decoration: none;
+	}
+}

@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head></head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="initial-scale=1.0, width=device-width">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Главная Страница</title>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Главная страница</title>
+  </head>
   <body>
     <div class="page">
       <div class="page__container">
-        <div class="page__inner">
+        <div class="content">
           <header class="header"><img class="header__logo" src="images/logo_nikola.png" alt="Храм святителя Николая"></header>
-          <nav class="menu">
+          <nav class="menu page__menu">
             <div class="container menu__container">
               <ul class="list menu__list">
                 <li class="menu__list-item">
@@ -23,12 +24,12 @@
                 </li>
                 <li class="menu__list-item"><span class="menu__link">Летопись храма</span>
                   <ul class="list menu__list-hidden">
-                    <li class="menu__list-hidden-item"><a class="menu__hidden-link" href="#">Основание Храма</a></li>
-                    <li class="menu__list-hidden-item"><a class="menu__hidden-link" href="#">Современность Храма</a></li>
-                    <li class="menu__list-hidden-item"><a class="menu__hidden-link" href="#">Настоятели Храма</a></li>
-                    <li class="menu__list-hidden-item"><a class="menu__hidden-link" href="#">Фотоархив</a></li>
-                    <li class="menu__list-hidden-item"><a class="menu__hidden-link" href="#">Видеоархив</a></li>
-                    <li class="menu__list-hidden-item"><a class="menu__hidden-link" href="#">Аудиоархив</a></li>
+                    <li class="menu__list-hidden-item"><a class="link menu__hidden-link" href="#">Основание Храма</a></li>
+                    <li class="menu__list-hidden-item"><a class="link menu__hidden-link" href="#">Современность Храма</a></li>
+                    <li class="menu__list-hidden-item"><a class="link menu__hidden-link" href="#">Настоятели Храма</a></li>
+                    <li class="menu__list-hidden-item"><a class="link menu__hidden-link" href="#">Фотоархив</a></li>
+                    <li class="menu__list-hidden-item"><a class="link menu__hidden-link" href="#">Видеоархив</a></li>
+                    <li class="menu__list-hidden-item"><a class="link menu__hidden-link" href="#">Аудиоархив</a></li>
                   </ul>
                   <svg class="menu__icon menu__icon-accordion">
                     <use xlink:href="images/sprite.svg#icon-arrow-point-to-down"></use>
@@ -38,10 +39,10 @@
                 </li>
                 <li class="menu__list-item"><span class="menu__link">Проповедь</span>
                   <ul class="list menu__list-hidden">
-                    <li class="menu__list-hidden-item"><a class="menu__hidden-link" href="#">Проповедь Патриарха</a></li>
-                    <li class="menu__list-hidden-item"><a class="menu__hidden-link" href="#">Проповедь Митрополита</a></li>
-                    <li class="menu__list-hidden-item"><a class="menu__hidden-link" href="#">Проповедь Священника</a></li>
-                    <li class="menu__list-hidden-item"><a class="menu__hidden-link" href="#">Проповедь Настоятеля</a></li>
+                    <li class="menu__list-hidden-item"><a class="link menu__hidden-link" href="#">Проповедь Патриарха</a></li>
+                    <li class="menu__list-hidden-item"><a class="link menu__hidden-link" href="#">Проповедь Митрополита</a></li>
+                    <li class="menu__list-hidden-item"><a class="link menu__hidden-link" href="#">Проповедь Священника</a></li>
+                    <li class="menu__list-hidden-item"><a class="link menu__hidden-link" href="#">Проповедь Настоятеля</a></li>
                   </ul>
                   <svg class="menu__icon menu__icon-accordion">
                     <use xlink:href="images/sprite.svg#icon-arrow-point-to-down"></use>
@@ -49,12 +50,12 @@
                 </li>
                 <li class="menu__list-item"><span class="menu__link">Библиотека</span>
                   <ul class="list menu__list-hidden">
-                    <li class="menu__list-hidden-item"><a class="menu__hidden-link" href="#">Библия</a></li>
-                    <li class="menu__list-hidden-item"><a class="menu__hidden-link" href="#">Богословие</a></li>
-                    <li class="menu__list-hidden-item"><a class="menu__hidden-link" href="#">Статьи</a></li>
-                    <li class="menu__list-hidden-item"><a class="menu__hidden-link" href="#">Жития святых</a></li>
-                    <li class="menu__list-hidden-item"><a class="menu__hidden-link" href="#">Художественная классика</a></li>
-                    <li class="menu__list-hidden-item"><a class="menu__hidden-link" href="#">Иконопись</a></li>
+                    <li class="menu__list-hidden-item"><a class="link menu__hidden-link" href="#">Библия</a></li>
+                    <li class="menu__list-hidden-item"><a class="link menu__hidden-link" href="#">Богословие</a></li>
+                    <li class="menu__list-hidden-item"><a class="link menu__hidden-link" href="#">Статьи</a></li>
+                    <li class="menu__list-hidden-item"><a class="link menu__hidden-link" href="#">Жития святых</a></li>
+                    <li class="menu__list-hidden-item"><a class="link menu__hidden-link" href="#">Художественная классика</a></li>
+                    <li class="menu__list-hidden-item"><a class="link menu__hidden-link" href="#">Иконопись</a></li>
                   </ul>
                   <svg class="menu__icon menu__icon-accordion">
                     <use xlink:href="images/sprite.svg#icon-arrow-point-to-down"></use>
@@ -62,15 +63,15 @@
                 </li>
                 <li class="menu__list-item"><span class="menu__link">Прихожанину</span>
                   <ul class="list menu__list-hidden">
-                    <li class="menu__list-hidden-item"><a class="menu__hidden-link" href="#">Святыни и иконы</a></li>
-                    <li class="menu__list-hidden-item"><a class="menu__hidden-link" href="#">Расписание богослужений</a></li>
-                    <li class="menu__list-hidden-item"><a class="menu__hidden-link" href="#">Предстоящие события</a></li>
-                    <li class="menu__list-hidden-item"><a class="menu__hidden-link" href="#">Тюремное служение</a></li>
-                    <li class="menu__list-hidden-item"><a class="menu__hidden-link" href="#">Социальное служение</a></li>
-                    <li class="menu__list-hidden-item"><a class="menu__hidden-link" href="#">Молодежное служение</a></li>
-                    <li class="menu__list-hidden-item"><a class="menu__hidden-link" href="#">Катехизация</a></li>
-                    <li class="menu__list-hidden-item"><a class="menu__hidden-link" href="#">Часто задаваемые вопросы</a></li>
-                    <li class="menu__list-hidden-item"><a class="menu__hidden-link" href="#">Православный календарь</a></li>
+                    <li class="menu__list-hidden-item"><a class="link menu__hidden-link" href="#">Святыни и иконы</a></li>
+                    <li class="menu__list-hidden-item"><a class="link menu__hidden-link" href="#">Расписание богослужений</a></li>
+                    <li class="menu__list-hidden-item"><a class="link menu__hidden-link" href="#">Предстоящие события</a></li>
+                    <li class="menu__list-hidden-item"><a class="link menu__hidden-link" href="#">Тюремное служение</a></li>
+                    <li class="menu__list-hidden-item"><a class="link menu__hidden-link" href="#">Социальное служение</a></li>
+                    <li class="menu__list-hidden-item"><a class="link menu__hidden-link" href="#">Молодежное служение</a></li>
+                    <li class="menu__list-hidden-item"><a class="link menu__hidden-link" href="#">Катехизация</a></li>
+                    <li class="menu__list-hidden-item"><a class="link menu__hidden-link" href="#">Часто задаваемые вопросы</a></li>
+                    <li class="menu__list-hidden-item"><a class="link menu__hidden-link" href="#">Православный календарь</a></li>
                   </ul>
                   <svg class="menu__icon menu__icon-accordion">
                     <use xlink:href="images/sprite.svg#icon-arrow-point-to-down"></use>
@@ -78,9 +79,9 @@
                 </li>
                 <li class="menu__list-item"><span class="menu__link">Воскресная школа</span>
                   <ul class="list menu__list-hidden">
-                    <li class="menu__list-hidden-item"><a class="menu__hidden-link" href="#">О Воскресной школе</a></li>
-                    <li class="menu__list-hidden-item"><a class="menu__hidden-link" href="#">Новости школы</a></li>
-                    <li class="menu__list-hidden-item"><a class="menu__hidden-link" href="#">Фото и видео</a></li>
+                    <li class="menu__list-hidden-item"><a class="link menu__hidden-link" href="#">О Воскресной школе</a></li>
+                    <li class="menu__list-hidden-item"><a class="link menu__hidden-link" href="#">Новости школы</a></li>
+                    <li class="menu__list-hidden-item"><a class="link menu__hidden-link" href="#">Фото и видео</a></li>
                   </ul>
                   <svg class="menu__icon menu__icon-accordion">
                     <use xlink:href="images/sprite.svg#icon-arrow-point-to-down"></use>
@@ -102,212 +103,216 @@
                 </button>
               </div>
               <form class="menu__search" action="#" name="search">
-                <label class="field menu__search-field"><span class="field__hint">Поиск</span>
+                <label class="field field--hidden menu__search-field"><span class="field__hint">Поиск</span>
                   <input class="field__input menu__search-input" name="search" placeholder="Поиск по сайту..." required>
                 </label>
                 <button class="button button--small button--blue menu__search-submit">Искать</button>
               </form>
             </div>
           </nav>
-          <main class="main container">
-            <div class="main__inner">
-              <div class="owl-carousel main__owl-carousel">
-                <div class="owl-carousel__imgbox"><img class="owl-carousel__img" src="images/delete/main_slider_photo_ch.jpg">
-                  <div class="owl-carousel__description">
-                    <p>
-                      Обращение настоятеля храма к прихожанам.
-                      В карусель также можно вынести самые важные новости, статьи, объявления, праздники.
-                    </p>
-                  </div>
-                </div>
-                <div class="owl-carousel__imgbox"><img class="owl-carousel__img" src="images/delete/news-1-ch.jpg">
-                  <div class="owl-carousel__description">
-                    <p>
-                      Обращение настоятеля храма к прихожанам.
-                      В карусель также можно вынести самые важные новости, статьи, объявления, праздники.
-                    </p>
-                  </div>
-                </div>
-                <div class="owl-carousel__imgbox"><img class="owl-carousel__img" src="images/delete/news-2-ch.jpg">
-                  <div class="owl-carousel__description">
-                    <p>
-                      Обращение настоятеля храма к прихожанам.
-                      В карусель также можно вынести самые важные новости, статьи, объявления, праздники.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <article class="calendar main__calendar">
-                <h2 class="title title--m title--line">Сегодня</h2><a class="calendar__container" href="#">
-                  <div class="calendar__date">
-                    <time class="calendar__new-date" datetime="2018-02-01"><span class="calendar__date-day">1</span><span class="calendar__date-month">февраля</span></time>
-                    <time class="calendar__old-date" datetime="2018-01-19"><span class="calendar__date-day">19</span><span class="calendar__date-month">января</span><span class="calendar__old-date-name">ст.ст.</span></time>
-                  </div><span class="calendar__name-day">четверг</span><span class="calendar__name-week">Седмица сплошная</span><span class="calendar__fasting">Поста нет</span></a>
-              </article>
-            </div>
-            <div class="main__inner">
-              <article class="schedule main__schedule">
-                <h2 class="title title--m title--line">Расписание богослужений</h2>
-                <div class="schedule__container">
-                  <div class="schedule__days"><span class="schedule__days-name">по будням</span>
-                    <ul class="list schedule__list"></ul>
-                    <div class="schedule__list-item"><span class="schedule__time">07:30</span><span class="schedule__name"> - исповедь</span></div>
-                    <div class="schedule__list-item"><span class="schedule__time">08:00</span><span class="schedule__name"> - Литургия</span></div>
-                    <div class="schedule__list-item"><span class="schedule__time">17:00</span><span class="schedule__name"> - вечерняя служба (накануне)</span></div>
-                  </div>
-                  <div class="schedule__days"><span class="schedule__days-name">по праздничным и воскресным дням</span>
-                    <ul class="list schedule__list"></ul>
-                    <div class="schedule__list-item"><span class="schedule__time">06:30</span><span class="schedule__name"> - исповедь</span></div>
-                    <div class="schedule__list-item"><span class="schedule__time">07:00</span><span class="schedule__name"> - Литургия (ранняя)</span></div>
-                    <div class="schedule__list-item"><span class="schedule__time">08:30</span><span class="schedule__name"> - исповедь</span></div>
-                    <div class="schedule__list-item"><span class="schedule__time">09:00</span><span class="schedule__name"> - Литургия (поздняя)</span></div>
-                    <div class="schedule__list-item"><span class="schedule__time">17:00</span><span class="schedule__name"> - вечерняя бдение (накануне)</span></div>
-                  </div>
-                </div>
-              </article>
-              <article class="sacrifice sacrifice--big main__sacrifice"><span class="sacrifice__preface">Дорогие братья и сестры!</span><span class="sacrifice__text">Молитвенно просим Вас внести свою лепту в дело возрождения исторической и духовной святыни - храма в честь святителя Николая чудотворца.</span>
-                <button class="button button--blue button--middle sacrifice__button">Пожертвовать</button>
-              </article>
-            </div>
-            <div class="main__inner">
-              <div class="quote main__quote">
-                <svg class="quote__icon">
-                  <use xlink:href="images/sprite.svg#icon-quotation-mark"></use>
-                </svg><span class="quote__text">Посылаемое все надобно принимать, как от руки Господней: скорбное ли - к терпению, приятное ли - к благодарению.</span><span class="qoute__author">прп. Моисей Оптинский</span>
-              </div>
-              <div class="question question--big main__question">
-                <button class="button question__button" type="button">Задать вопрос настоятелю</button>
-                <svg class="question__icon">
-                  <use xlink:href="images/sprite.svg#icon-question"></use>
-                </svg>
-              </div>
-            </div>
-            <div class="main__inner">
-              <section class="last-news main__last-news">
-                <h2 class="title title--m title--line last-news__title">Последние новости</h2>
-                <div class="last-news__tabs"><span class="last-news__tab last-news__active-tab">новости храма</span><a class="last-news__tab" href="#">новости епархии</a><a class="last-news__tab" href="#">новости патриархии</a><a class="last-news__tab" href="#">сми о нас</a></div>
-                <div class="last-news__group">
-                  <article class="last-news__post">
-                    <header class="last-news__post-header">
-                      <div class="last-news__imgbox"><img class="last-news__img" src="images/delete/news-1.jpg" alt="Люди на празднике"></div>
-                      <div class="last-news__inner">
-                        <time class="last-news__date" datetime="#{elem.date_1}">28 января 2018 г.</time>
-                        <h3 class="title title--s"><a class="last-news__link" href="#">Иерей Сергий Беляков принял участие в спортивном празднике «Зимушка-зима»</a></h3>
+          <div class="container">
+            <div class="page__inner">
+              <main class="main">
+                <div class="main__inner">
+                  <div class="owl-carousel main__owl-carousel">
+                    <div class="owl-carousel__imgbox"><img class="owl-carousel__img" src="images/delete/main_slider_photo_ch.jpg" alt="Служение">
+                      <div class="owl-carousel__description">
+                        <p>
+                          Обращение настоятеля храма к прихожанам.
+                          В карусель также можно вынести самые важные новости, статьи, объявления, праздники.
+                        </p>
                       </div>
-                    </header>
-                    <div class="last-news__description">
-                      <p>В воскресенье, 28 января 2018 года, в Пензенском Центральном парке культуры и отдыха имени В.Г.Белинского состоялся большой спортивный праздник «Зимушка-зима».</p>
                     </div>
-                  </article>
-                  <article class="last-news__post">
-                    <header class="last-news__post-header">
-                      <div class="last-news__imgbox"><img class="last-news__img" src="images/delete/news-2.jpg" alt="Священники перед чашей"></div>
-                      <div class="last-news__inner">
-                        <time class="last-news__date" datetime="#{elem.date_1}">27 января 2018 г.</time>
-                        <h3 class="title title--s"><a class="last-news__link" href="#">Протоиерей Александр Филиппов совершил водосвятный молебен с акафистом Божией Матери перед ее чудотворным образом &quot;Неупиваемая чаша&quot;.</a></h3>
+                    <div class="owl-carousel__imgbox"><img class="owl-carousel__img" src="images/delete/news-1-ch.jpg" alt="Праздник">
+                      <div class="owl-carousel__description">
+                        <p>
+                          Обращение настоятеля храма к прихожанам.
+                          В карусель также можно вынести самые важные новости, статьи, объявления, праздники.
+                        </p>
                       </div>
-                    </header>
-                    <div class="last-news__description">
-                      <p>В субботу 27 января 2018 года, по завершении Божественной Литургии, настоятель нашего храма протоиерей Александр Филиппов совершил водосвятный молебен с акафистом Божией Матери перед ее чудотворным образом &quot;Неупиваемая чаша&quot;.</p>
                     </div>
-                  </article>
-                  <article class="last-news__post">
-                    <header class="last-news__post-header">
-                      <div class="last-news__imgbox"><img class="last-news__img" src="images/delete/news-3.jpg" alt="Люди на празднике"></div>
-                      <div class="last-news__inner">
-                        <time class="last-news__date" datetime="#{elem.date_1}">28 января 2018 г.</time>
-                        <h3 class="title title--s"><a class="last-news__link" href="#">Иерей Сергий Беляков принял участие в спортивном празднике «Зимушка-зима»</a></h3>
+                    <div class="owl-carousel__imgbox"><img class="owl-carousel__img" src="images/delete/news-2-ch.jpg" alt="Служение">
+                      <div class="owl-carousel__description">
+                        <p>
+                          Обращение настоятеля храма к прихожанам.
+                          В карусель также можно вынести самые важные новости, статьи, объявления, праздники.
+                        </p>
                       </div>
-                    </header>
-                    <div class="last-news__description">
-                      <p>В воскресенье, 28 января 2018 года, в Пензенском Центральном парке культуры и отдыха имени В.Г.Белинского состоялся большой спортивный праздник «Зимушка-зима».</p>
                     </div>
-                  </article>
-                  <article class="last-news__post">
-                    <header class="last-news__post-header">
-                      <div class="last-news__imgbox"><img class="last-news__img" src="images/delete/news-4.jpg" alt="Священники перед чашей"></div>
-                      <div class="last-news__inner">
-                        <time class="last-news__date" datetime="#{elem.date_1}">27 января 2018 г.</time>
-                        <h3 class="title title--s"><a class="last-news__link" href="#">Иерей Сергий Беляков принял участие в спортивном празднике «Зимушка-зима»</a></h3>
-                      </div>
-                    </header>
-                    <div class="last-news__description">
-                      <p>В субботу 27 января 2018 года, по завершении Божественной Литургии, настоятель нашего храма протоиерей Александр Филиппов совершил водосвятный молебен с акафистом Божией Матери перед ее чудотворным образом &quot;Неупиваемая чаша&quot;.</p>
-                    </div>
+                  </div>
+                  <article class="calendar main__calendar">
+                    <h2 class="title title--m title--line">Сегодня</h2><a class="calendar__container" href="#">
+                      <div class="calendar__date">
+                        <time class="calendar__new-date" datetime="2018-02-01"><span class="calendar__date-day">1</span><span class="calendar__date-month">февраля</span></time>
+                        <time class="calendar__old-date" datetime="2018-01-19"><span class="calendar__date-day">19</span><span class="calendar__date-month">января</span><span class="calendar__old-date-name">ст.ст.</span></time>
+                      </div><span class="calendar__name-day">четверг</span><span class="calendar__name-week">Седмица сплошная</span><span class="calendar__fasting">Поста нет</span></a>
                   </article>
                 </div>
-                <button class="button button--blue button--middle">Все новости</button>
-              </section>
-              <section class="recommendation">
-                <h2 class="title title--m title--line recommendation__title">Рекомендуем прочитать</h2>
-                <div class="recommendation__container">
-                  <div class="recommendation__group">
-                    <div class="recommendation__item"><span class="recommendation__author">Зигабен Евфимий</span>
-                      <h3 class="title title--ms recommendation__title">Толкование Евангелия от Иоанна</h3>
-                      <div class="recommendation__description">
-                        <p>Толкование на Евангелия от Иоанна, составленные по древним святоотеческим толкованиям византийским, 12 века, ученым монахом Евфимием Зигабеном / перевод с греческого.</p>
+                <div class="main__inner">
+                  <article class="schedule main__schedule">
+                    <h2 class="title title--m title--line">Расписание богослужений</h2>
+                    <div class="schedule__container">
+                      <div class="schedule__days"><span class="schedule__days-name">по будням</span>
+                        <ul class="list schedule__list"></ul>
+                        <div class="schedule__list-item"><span class="schedule__time">07:30</span><span class="schedule__name"> - исповедь</span></div>
+                        <div class="schedule__list-item"><span class="schedule__time">08:00</span><span class="schedule__name"> - Литургия</span></div>
+                        <div class="schedule__list-item"><span class="schedule__time">17:00</span><span class="schedule__name"> - вечерняя служба (накануне)</span></div>
                       </div>
-                      <div class="recommendation__links">
-                        <div class="recommendation__linkbox"><a class="recommendation__link" href="#">Читать онлайн</a></div>
-                        <div class="recommendation__linkbox"><a class="recommendation__link" href="#">Скачать</a></div>
-                      </div>
-                    </div>
-                    <div class="recommendation__item"><span class="recommendation__author">Зигабен Евфимий</span>
-                      <h3 class="title title--ms recommendation__title">Толкование Евангелия от Иоанна</h3>
-                      <div class="recommendation__description">
-                        <p>Толкование на Евангелия от Иоанна, составленные по древним святоотеческим толкованиям византийским, 12 века, ученым монахом Евфимием Зигабеном / перевод с греческого.</p>
-                      </div>
-                      <div class="recommendation__links">
-                        <div class="recommendation__linkbox"><a class="recommendation__link" href="#">Читать онлайн</a></div>
-                        <div class="recommendation__linkbox"><a class="recommendation__link" href="#">Скачать</a></div>
+                      <div class="schedule__days"><span class="schedule__days-name">по праздничным и воскресным дням</span>
+                        <ul class="list schedule__list"></ul>
+                        <div class="schedule__list-item"><span class="schedule__time">06:30</span><span class="schedule__name"> - исповедь</span></div>
+                        <div class="schedule__list-item"><span class="schedule__time">07:00</span><span class="schedule__name"> - Литургия (ранняя)</span></div>
+                        <div class="schedule__list-item"><span class="schedule__time">08:30</span><span class="schedule__name"> - исповедь</span></div>
+                        <div class="schedule__list-item"><span class="schedule__time">09:00</span><span class="schedule__name"> - Литургия (поздняя)</span></div>
+                        <div class="schedule__list-item"><span class="schedule__time">17:00</span><span class="schedule__name"> - вечерняя бдение (накануне)</span></div>
                       </div>
                     </div>
-                    <div class="recommendation__item"><span class="recommendation__author">Зигабен Евфимий</span>
-                      <h3 class="title title--ms recommendation__title">Толкование Евангелия от Иоанна</h3>
-                      <div class="recommendation__description">
-                        <p>Толкование на Евангелия от Иоанна, составленные по древним святоотеческим толкованиям византийским, 12 века, ученым монахом Евфимием Зигабеном / перевод с греческого.</p>
-                      </div>
-                      <div class="recommendation__links">
-                        <div class="recommendation__linkbox"><a class="recommendation__link" href="#">Читать онлайн</a></div>
-                        <div class="recommendation__linkbox"><a class="recommendation__link" href="#">Скачать</a></div>
-                      </div>
-                    </div>
-                    <div class="recommendation__item"><span class="recommendation__author">Зигабен Евфимий</span>
-                      <h3 class="title title--ms recommendation__title">Толкование Евангелия от Иоанна</h3>
-                      <div class="recommendation__description">
-                        <p>Толкование на Евангелия от Иоанна, составленные по древним святоотеческим толкованиям византийским, 12 века, ученым монахом Евфимием Зигабеном / перевод с греческого.</p>
-                      </div>
-                      <div class="recommendation__links">
-                        <div class="recommendation__linkbox"><a class="recommendation__link" href="#">Читать онлайн</a></div>
-                        <div class="recommendation__linkbox"><a class="recommendation__link" href="#">Скачать</a></div>
-                      </div>
-                    </div>
-                    <div class="recommendation__item"><span class="recommendation__author">Зигабен Евфимий</span>
-                      <h3 class="title title--ms recommendation__title">Толкование Евангелия от Иоанна</h3>
-                      <div class="recommendation__description">
-                        <p>Толкование на Евангелия от Иоанна, составленные по древним святоотеческим толкованиям византийским, 12 века, ученым монахом Евфимием Зигабеном / перевод с греческого.</p>
-                      </div>
-                      <div class="recommendation__links">
-                        <div class="recommendation__linkbox"><a class="recommendation__link" href="#">Читать онлайн</a></div>
-                        <div class="recommendation__linkbox"><a class="recommendation__link" href="#">Скачать</a></div>
-                      </div>
-                    </div>
-                    <div class="recommendation__item"><span class="recommendation__author">Зигабен Евфимий</span>
-                      <h3 class="title title--ms recommendation__title">Толкование Евангелия от Иоанна</h3>
-                      <div class="recommendation__description">
-                        <p>Толкование на Евангелия от Иоанна, составленные по древним святоотеческим толкованиям византийским, 12 века, ученым монахом Евфимием Зигабеном / перевод с греческого.</p>
-                      </div>
-                      <div class="recommendation__links">
-                        <div class="recommendation__linkbox"><a class="recommendation__link" href="#">Читать онлайн</a></div>
-                        <div class="recommendation__linkbox"><a class="recommendation__link" href="#">Скачать</a></div>
-                      </div>
-                    </div>
+                  </article>
+                  <div class="sacrifice sacrifice--big main__sacrifice"><span class="sacrifice__preface">Дорогие братья и сестры!</span><span class="sacrifice__text">Молитвенно просим Вас внести свою лепту в дело возрождения исторической и духовной святыни - храма в честь святителя Николая чудотворца.</span>
+                    <button class="button button--blue button--big sacrifice__button">Пожертвовать</button>
                   </div>
-                  <button class="button button--blue button--middle">Все материалы</button>
                 </div>
-              </section>
+                <div class="main__inner">
+                  <div class="quote main__quote">
+                    <svg class="quote__icon">
+                      <use xlink:href="images/sprite.svg#icon-quotation-mark"></use>
+                    </svg><span class="quote__text">Посылаемое все надобно принимать, как от руки Господней: скорбное ли - к терпению, приятное ли - к благодарению.</span><span class="qoute__author">прп. Моисей Оптинский</span>
+                  </div>
+                  <div class="question question--big main__question">
+                    <button class="link button question__button" type="button">Задать вопрос настоятелю</button>
+                    <svg class="question__icon">
+                      <use xlink:href="images/sprite.svg#icon-question"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="main__inner">
+                  <section class="last-news main__last-news">
+                    <h2 class="title title--m title--line last-news__title">Последние новости</h2>
+                    <div class="last-news__tabs"><span class="last-news__tab last-news__active-tab">новости храма</span><a class="link last-news__tab" href="#">новости епархии</a><a class="link last-news__tab" href="#">новости патриархии</a><a class="link last-news__tab" href="#">сми о нас</a></div>
+                    <div class="last-news__group">
+                      <article class="last-news__post">
+                        <div class="last-news__post-wrapper">
+                          <div class="last-news__imgbox"><img class="last-news__img" src="/images/delete/news-1.jpg" alt="Люди на празднике"></div>
+                          <div class="last-news__inner">
+                            <time class="last-news__date" datetime="2018-01-28">28 января 2018 г.</time>
+                            <h3 class="title title--s"><a class="last-news__link" href="#">Иерей Сергий Беляков принял участие в спортивном празднике «Зимушка-зима»</a></h3>
+                          </div>
+                        </div>
+                        <div class="last-news__description">
+                          <p>В воскресенье, 28 января 2018 года, в Пензенском Центральном парке культуры и отдыха имени В.Г.Белинского состоялся большой спортивный праздник «Зимушка-зима».</p>
+                        </div>
+                      </article>
+                      <article class="last-news__post">
+                        <div class="last-news__post-wrapper">
+                          <div class="last-news__imgbox"><img class="last-news__img" src="/images/delete/news-2.jpg" alt="Священники перед чашей"></div>
+                          <div class="last-news__inner">
+                            <time class="last-news__date" datetime="2018-01-27">27 января 2018 г.</time>
+                            <h3 class="title title--s"><a class="last-news__link" href="#">Протоиерей Александр Филиппов совершил водосвятный молебен с акафистом Божией Матери перед ее чудотворным образом &quot;Неупиваемая чаша&quot;.</a></h3>
+                          </div>
+                        </div>
+                        <div class="last-news__description">
+                          <p>В субботу 27 января 2018 года, по завершении Божественной Литургии, настоятель нашего храма протоиерей Александр Филиппов совершил водосвятный молебен с акафистом Божией Матери перед ее чудотворным образом &quot;Неупиваемая чаша&quot;.</p>
+                        </div>
+                      </article>
+                      <article class="last-news__post">
+                        <div class="last-news__post-wrapper">
+                          <div class="last-news__imgbox"><img class="last-news__img" src="/images/delete/news-1.jpg" alt="Люди на празднике"></div>
+                          <div class="last-news__inner">
+                            <time class="last-news__date" datetime="2018-01-28">28 января 2018 г.</time>
+                            <h3 class="title title--s"><a class="last-news__link" href="#">Иерей Сергий Беляков принял участие в спортивном празднике «Зимушка-зима»</a></h3>
+                          </div>
+                        </div>
+                        <div class="last-news__description">
+                          <p>В воскресенье, 28 января 2018 года, в Пензенском Центральном парке культуры и отдыха имени В.Г.Белинского состоялся большой спортивный праздник «Зимушка-зима».</p>
+                        </div>
+                      </article>
+                      <article class="last-news__post">
+                        <div class="last-news__post-wrapper">
+                          <div class="last-news__imgbox"><img class="last-news__img" src="/images/delete/news-2.jpg" alt="Священники перед чашей"></div>
+                          <div class="last-news__inner">
+                            <time class="last-news__date" datetime="2018-01-27">27 января 2018 г.</time>
+                            <h3 class="title title--s"><a class="last-news__link" href="#">Протоиерей Александр Филиппов совершил водосвятный молебен с акафистом Божией Матери перед ее чудотворным образом &quot;Неупиваемая чаша&quot;.</a></h3>
+                          </div>
+                        </div>
+                        <div class="last-news__description">
+                          <p>В субботу 27 января 2018 года, по завершении Божественной Литургии, настоятель нашего храма протоиерей Александр Филиппов совершил водосвятный молебен с акафистом Божией Матери перед ее чудотворным образом &quot;Неупиваемая чаша&quot;.</p>
+                        </div>
+                      </article>
+                    </div>
+                    <button class="button button--blue button--big last-news__button">Все новости</button>
+                  </section>
+                  <section class="recommendation">
+                    <h2 class="title title--m title--line recommendation__title">Рекомендуем прочитать</h2>
+                    <div class="recommendation__container">
+                      <div class="recommendation__group">
+                        <div class="recommendation__item"><span class="recommendation__author">Зигабен Евфимий</span>
+                          <h3 class="title title--ms recommendation__title">Толкование Евангелия от Иоанна</h3>
+                          <div class="recommendation__description">
+                            <p>Толкование на Евангелия от Иоанна, составленные по древним святоотеческим толкованиям византийским, 12 века, ученым монахом Евфимием Зигабеном / перевод с греческого.</p>
+                          </div>
+                          <div class="recommendation__links">
+                            <div class="recommendation__linkbox"><a class="link recommendation__link" href="#">Читать онлайн</a></div>
+                            <div class="recommendation__linkbox"><a class="link recommendation__link" href="#">Скачать</a></div>
+                          </div>
+                        </div>
+                        <div class="recommendation__item"><span class="recommendation__author">Зигабен Евфимий</span>
+                          <h3 class="title title--ms recommendation__title">Толкование Евангелия от Иоанна</h3>
+                          <div class="recommendation__description">
+                            <p>Толкование на Евангелия от Иоанна, составленные по древним святоотеческим толкованиям византийским, 12 века, ученым монахом Евфимием Зигабеном / перевод с греческого.</p>
+                          </div>
+                          <div class="recommendation__links">
+                            <div class="recommendation__linkbox"><a class="link recommendation__link" href="#">Читать онлайн</a></div>
+                            <div class="recommendation__linkbox"><a class="link recommendation__link" href="#">Скачать</a></div>
+                          </div>
+                        </div>
+                        <div class="recommendation__item"><span class="recommendation__author">Зигабен Евфимий</span>
+                          <h3 class="title title--ms recommendation__title">Толкование Евангелия от Иоанна</h3>
+                          <div class="recommendation__description">
+                            <p>Толкование на Евангелия от Иоанна, составленные по древним святоотеческим толкованиям византийским, 12 века, ученым монахом Евфимием Зигабеном / перевод с греческого.</p>
+                          </div>
+                          <div class="recommendation__links">
+                            <div class="recommendation__linkbox"><a class="link recommendation__link" href="#">Читать онлайн</a></div>
+                            <div class="recommendation__linkbox"><a class="link recommendation__link" href="#">Скачать</a></div>
+                          </div>
+                        </div>
+                        <div class="recommendation__item"><span class="recommendation__author">Зигабен Евфимий</span>
+                          <h3 class="title title--ms recommendation__title">Толкование Евангелия от Иоанна</h3>
+                          <div class="recommendation__description">
+                            <p>Толкование на Евангелия от Иоанна, составленные по древним святоотеческим толкованиям византийским, 12 века, ученым монахом Евфимием Зигабеном / перевод с греческого.</p>
+                          </div>
+                          <div class="recommendation__links">
+                            <div class="recommendation__linkbox"><a class="link recommendation__link" href="#">Читать онлайн</a></div>
+                            <div class="recommendation__linkbox"><a class="link recommendation__link" href="#">Скачать</a></div>
+                          </div>
+                        </div>
+                        <div class="recommendation__item"><span class="recommendation__author">Зигабен Евфимий</span>
+                          <h3 class="title title--ms recommendation__title">Толкование Евангелия от Иоанна</h3>
+                          <div class="recommendation__description">
+                            <p>Толкование на Евангелия от Иоанна, составленные по древним святоотеческим толкованиям византийским, 12 века, ученым монахом Евфимием Зигабеном / перевод с греческого.</p>
+                          </div>
+                          <div class="recommendation__links">
+                            <div class="recommendation__linkbox"><a class="link recommendation__link" href="#">Читать онлайн</a></div>
+                            <div class="recommendation__linkbox"><a class="link recommendation__link" href="#">Скачать</a></div>
+                          </div>
+                        </div>
+                        <div class="recommendation__item"><span class="recommendation__author">Зигабен Евфимий</span>
+                          <h3 class="title title--ms recommendation__title">Толкование Евангелия от Иоанна</h3>
+                          <div class="recommendation__description">
+                            <p>Толкование на Евангелия от Иоанна, составленные по древним святоотеческим толкованиям византийским, 12 века, ученым монахом Евфимием Зигабеном / перевод с греческого.</p>
+                          </div>
+                          <div class="recommendation__links">
+                            <div class="recommendation__linkbox"><a class="link recommendation__link" href="#">Читать онлайн</a></div>
+                            <div class="recommendation__linkbox"><a class="link recommendation__link" href="#">Скачать</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="button button--blue button--big">Все материалы</button>
+                    </div>
+                  </section>
+                </div>
+              </main>
             </div>
-          </main>
+          </div>
         </div>
         <footer class="footer">
           <div class="container footer__container">
@@ -342,23 +347,22 @@
         <div class="modal modal--xl">
           <div class="modal__box">
             <div class="modal__inner">
-              <div class="modal__header">
-                <h2 class="title title--s modal__title">Modal Title</h2>
-                <button class="button modal__close">close modal</button>
-              </div>
-              <div class="modal__content">
-                <p>
-                  Lorem ipsum dolor
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt ut
-                  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                  in
-                  voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat
-                  non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-              </div>
+              <button class="button modal__close">close modal</button>
+              <h2 class="title title--m modal__title">Задать вопрос настоятелю</h2><span class="modal__answer">Возможно, у нас уже есть ответ в разделе<a class="link modal__link" href="#">Часто задаваемые вопросы</a></span>
+              <form class="modal__form" name="question" method="post" action="#">
+                <label class="field modal__field"><span class="field__hint modal__hint">Как к Вам можно обращаться?</span>
+                  <input class="field__input" name="name" required>
+                </label>
+                <label class="field modal__field"><span class="field__hint modal__hint">Адрес электронной почты</span>
+                  <input class="field__input" name="email" type="email" required>
+                </label>
+                <label class="field modal__field"><span class="field__hint modal__hint">Ваш вопрос</span>
+                  <textarea class="textarea field__input" name="question" required></textarea>
+                </label>
+                <div class="modal__buttonbox">
+                  <button class="button button--blue button--middle">Задать вопрос</button>
+                </div>
+              </form>
             </div>
           </div>
         </div>

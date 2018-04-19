@@ -18,21 +18,12 @@
 	cursor: pointer;
 
 	&:hover {
-		color: $black;
+		color: inherit;
 	}
 }
 
 .menu__list-hidden-item:not(:last-child) {
 	margin-bottom: 1.5rem;
-}
-
-.menu__hidden-link {
-	color: $blue;
-
-	&:hover {
-		text-decoration: none;
-		color: $black;
-	}
 }
 
 .menu__icon {
@@ -225,7 +216,7 @@
 		border-left: 2px solid $light-blue;
 		border-right: 2px solid $light-blue;
 		background-color: $white;
-		z-index: 2;
+		z-index: 3;
 
 		& ~ .menu__link:hover {
 			color: $black;

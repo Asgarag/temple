@@ -1,10 +1,17 @@
 @import "../variables";
 
 .sacrifice {
-	padding: 3rem 3.5rem;
 	border: solid 3px $blue;
 	background-color: $beige;
 	box-sizing: border-box;
+
+	&--big {
+		padding: 3rem 3.5rem;
+	}
+
+	&--middle {
+		padding: 1.2rem;
+	}
 }
 
 .sacrifice__preface {
@@ -18,13 +25,17 @@
 	margin-bottom: 2rem;
 }
 
-@media (max-width: 767px) {
-	.sacrifice--big {
-		max-width: 275px;
+@media (max-width: 840px) {
+	.sacrifice {
+		text-align: center;
 	}
 }
 
-@media (min-width: 768px) {
+@media (min-width: 840px) {
+	.sacrifice--middle {
+		max-width: 220px;
+	}
+
 	.sacrifice--big {
 		max-width: 300px;
 	}

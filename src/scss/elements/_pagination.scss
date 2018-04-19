@@ -1,0 +1,13 @@
+@import "../variables";
+
+.pagination {
+	margin-top: 5rem;
+}
+
+.pagination__list {
+	display: flex;
+}
+
+.pagination__list-item:not(:last-child) {
+	margin-right: 2.5rem;
+}

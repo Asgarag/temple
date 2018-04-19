@@ -1,6 +1,6 @@
 header.header
 	img.header__logo(src="images/logo_nikola.png", alt="Храм святителя Николая")
-nav.menu
+nav.menu.page__menu
 	div.container.menu__container
 		ul.list.menu__list
 			-
@@ -23,7 +23,7 @@ nav.menu
 						span.menu__link #{elem.name}
 						ul.list.menu__list-hidden
 							for elem1 in elem.hidden
-								li.menu__list-hidden-item: a.menu__hidden-link(href="#") #{elem1}
+								li.menu__list-hidden-item: a.link.menu__hidden-link(href="#") #{elem1}
 						svg.menu__icon.menu__icon-accordion
 							use(xlink:href="images/sprite.svg#icon-arrow-point-to-down")
 					else
@@ -36,7 +36,7 @@ nav.menu
 				svg.menu__icon
 					use(xlink:href="images/sprite.svg#icon-menu")
 		form.menu__search(action="#", name="search")
-			label.field.menu__search-field
+			label.field.field--hidden.menu__search-field
 				span.field__hint Поиск
 				input.field__input.menu__search-input(name="search", placeholder="Поиск по сайту..." required)
 			button.button.button--small.button--blue.menu__search-submit Искать

@@ -2,11 +2,18 @@
 
 .field {
 	display: block;
+
+	&--hidden {
+		.field__hint {
+			position: absolute;
+			left: -9999px;
+		}
+	}
 }
 
 .field__hint {
-	position: absolute;
-	left: -9999px;
+	display: block;
+	margin-bottom: 1rem;
 }
 
 .field__input {

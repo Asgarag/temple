@@ -1,0 +1,23 @@
+@import "../variables";
+
+.abbots__item {
+	display: flex;
+	align-items: center;
+
+	&:not(:last-child) {
+		margin-bottom: 3rem;
+	}
+}
+
+.abbots__avatarbox {
+	width: 140px;
+	flex-shrink: 0;
+	margin-right: 2rem;
+}
+
+.abbots__name {
+	font-size: 1.6rem;
+	font-weight: 700;
+	display: block;
+	margin-bottom: .5rem;
+}

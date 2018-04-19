@@ -14,11 +14,19 @@
 	&--small {
 		border-radius: 4px;
 		padding: 1rem 2rem;
+		font-size: 1.2rem;
 	}
 
 	&--middle {
 		border-radius: 4px;
-		padding: 1.5rem 5.8rem;
+		padding: 1.5rem 4.6rem;
+		font-size: 1.2rem;
+	}
+
+	&--big {
+		border-radius: 4px;
+		padding: 1.5rem 6.4rem;
+		font-size: 1.2rem;
 	}
 
 	&--blue {

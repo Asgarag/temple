@@ -1,0 +1,16 @@
+@import "../variables";
+
+.sidebar__calendar {
+	margin-bottom: 2.5rem;
+}
+
+.sidebar__sacrifice {
+	margin-bottom: 2.5rem;
+}
+
+@media (max-width: 840px) {
+	.sidebar__calendar {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

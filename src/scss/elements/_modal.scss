@@ -30,11 +30,7 @@
 	background-color: $white;
 	box-shadow: 0 0 36.8px 9.2px rgba(9, 12, 18, 0.3);
 	border: solid 2px $light-blue;
-}
-
-.modal__header {
-	padding: 2rem;
-	border-bottom: 1px solid $gray;
+	padding: 5rem 6rem 6rem;
 	position: relative;
 }
 
@@ -93,4 +89,31 @@
 	&:hover, &:focus {
 		opacity: .7;
 	}
+}
+
+.modal__hint {
+	font-weight: 700;
+}
+
+.modal__field {
+	margin-bottom: 3rem;
+}
+
+.modal__title {
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+.modal__answer {
+	display: block;
+	margin-bottom: 4rem;
+	text-align: center;
+}
+
+.modal__link {
+	margin-left: .5rem;
+}
+
+.modal__buttonbox {
+	text-align: center;
 }

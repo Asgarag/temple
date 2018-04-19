@@ -1,9 +1,5 @@
 @import "../variables";
 
-.main {
-	margin-top: 4rem;
-}
-
 .main__inner:not(:last-child) {
 	margin-bottom: 4rem;
 }
@@ -34,9 +30,17 @@
 	.main__last-news {
 		margin-bottom: 5rem;
 	}
+
+	.main {
+		margin-bottom: 4rem;
+	}
 }
 
 @media (min-width: 840px) {
+	.main {
+		flex-grow: 1;
+	}
+
 	.main__inner {
 		display: flex;
 		justify-content: space-between;
@@ -58,6 +62,16 @@
 		width: 46%;
 		margin-right: 3%;
 		flex-shrink: 0;
+	}
+
+	.main__question {
+		flex-shrink: 0;
+	}
+
+	.main__sacrifice {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 	}
 }
 
