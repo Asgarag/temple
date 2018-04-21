@@ -1,0 +1,11 @@
+nav.breadcrumbs.page__breadcrumbs
+	ul.list.breadcrumbs__list
+		for elem in breadcrumbs
+			li.breadcrumbs__list-item
+				if elem.flag === 1
+					if elem.link
+						a.breadcrumbs__link(href=elem.link) #{elem.name}
+					else
+						a.breadcrumbs__link(href="#") #{elem.name}
+				else
+					span.breadcrumbs__link-active #{elem.name}

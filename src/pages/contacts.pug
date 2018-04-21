@@ -1,0 +1,84 @@
+extends layout/layout
+
+block title
+	title Контакты
+
+block content
+	-
+		var breadcrumbs = [{name: 'Главная', flag: 1, link: "index.html"}, {name: 'Контакты', flag: 0}]
+		var contacts = [
+		{
+		name: 'Протоиерей Александр Филиппов',
+		post: 'настоятель Никольской церкви',
+		tel: '+7-906-158-81-21',
+		src: 'images/delete/contact-1.jpg',
+		alt1: 'Портрет Протоиерия Александра Филиппова'
+		},
+		{
+		name: 'Протоиерей Антоний Шварев',
+		tel: '+7-908-530-20-13',
+		src: 'images/delete/contact-2.jpg',
+		alt1: 'Портрет Протоиерия Антона Шварева'
+		},
+		{
+		name: 'Иерей Сергий Беляков',
+		tel: '+7-937-416-99-26',
+		src: 'images/delete/contact-3.jpg',
+		alt1: 'Портрет Иерия Сергея Белякова'
+		},
+		{
+		name: 'Иерей Михаил Саратян',
+		tel: '+7-905-015-46-47',
+		src: 'images/delete/contact-4.jpg',
+		alt1: 'Портрет Иерия Михаила Саратяна'
+		},
+		{
+		name: 'Диакон Александр Хохлов',
+		tel: '+7-963-106-44-20',
+		src: 'images/delete/contact-5.jpg',
+		alt1: 'Портрет Диакона Александра Хохлова'
+		},
+		{
+		name: 'Елена Юрьевна Чекунова',
+		post: 'помощник настоятеля по делам социального служения',
+		tel: '+7-937-405-20-14',
+		src: 'images/delete/contact-1.jpg',
+		alt1: 'Портрет Елены Юрьевны Чекуновой'
+		},
+		{
+		name: 'Анна Петровна Лазарева',
+		post: 'директор воскресной школы',
+		tel: '+7-905-015-98-10',
+		src: 'images/delete/contact-1.jpg',
+		alt1: 'Портрет Анны Петровны Лазаревой'
+		}
+		]
+	include layout/breadcrumbs
+	div.page__inner
+		main.main.page__main
+			section.contacts
+				h1.title.title--m.title--line.contacts__title Контакты
+				span.contacts__organization Местная православная религиозная организация Прихода Никольской церкви г.Пенза
+				span.contacts__text адрес: 440056, г.Пенза, ул.Терновского,д. 129
+				span.contacts__text e-mail:
+					a.link.contacts__email-link(href="mailto:hramnikola@mail.ru") hramnikola@mail.ru
+				span.contacts__open Храм открыт ежедневно с 07:00 до 19:00
+				a.link.contacts__social(href="#") ВКонтакте
+				span.contacts__bank-details Банковские реквизиты:
+				span.contacts__bank-details ИНН/КПП: 5837009946/583701001
+				span.contacts__bank-details р/с: 40703810948000005766 в Пензенском ОСБ №8624
+				span.contacts__bank-details БИК: 045655635
+				span.contacts__bank-details к/с: 30101810000000000635
+				div.contacts__group
+					for elem in contacts
+						div.contacts__item
+							div.contacts__imgbox
+								img.contacts__img(src=elem.src, alt=elem.alt1)
+							div.contacts__about
+								span.contacts__name #{elem.name}
+								if elem.post
+									span.contacts__post #{elem.post}
+							svg.contacts__icon
+								use(xlink:href="images/sprite.svg#icon-phone-receiver")
+							span.contacts__tel #{elem.tel}
+		include layout/sidebar

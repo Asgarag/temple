@@ -1,42 +1,35 @@
 @import "../variables";
 
-.last-news__tabs {
+.preaching__tabs {
+	padding-top: 2rem;
 	font-size: 1.2rem;
 	display: flex;
 	margin-bottom: 4rem;
 }
 
-.last-news__tab:not(:last-child) {
-	margin-right: 2rem;
-}
-
-.last-news__active-tab {
-	color: $gray;
-}
-
-.last-news__post:not(:last-of-type) {
+.preaching__post:not(:last-of-type) {
 	margin-bottom: 5rem;
 }
 
-.last-news__post-wrapper {
+.preaching__post-wrapper {
 	margin-bottom: 1.5rem;
 }
 
-.last-news__date {
+.preaching__date {
 	display: block;
 	color: $gray;
 	margin-bottom: 1.5rem;
 }
 
-.last-news__title {
-	margin-bottom: 4rem;
-}
-
-.last-news__post-title {
+.preaching__title {
 	margin-bottom: 2rem;
 }
 
-.last-news__link {
+.preaching__post-title {
+	margin-bottom: 1.5rem;
+}
+
+.preaching__link {
 	color: $black;
 	text-decoration: none;
 
@@ -47,26 +40,26 @@
 	}
 }
 
-.last-news__button {
+.preaching__button {
 	margin-top: 4rem;
 }
 
-.last-news__description {
+.preaching__description {
 	font-weight: 300;
 }
 
 @media (max-width: 479px) {
-	.last-news__imgbox {
+	.preaching__imgbox {
 		margin-bottom: 1rem;
 	}
 }
 
 @media (min-width: 480px) {
-	.last-news__post-wrapper {
+	.preaching__post-wrapper {
 		display: flex;
 	}
 
-	.last-news__imgbox {
+	.preaching__imgbox {
 		max-width: 200px;
 		margin-right: 2rem;
 		flex-shrink: 0;

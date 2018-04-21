@@ -5,14 +5,14 @@ nav.menu.page__menu
 		ul.list.menu__list
 			-
 				var menu = [
-				{ name:'Летопись храма', hidden:['Основание Храма', 'Современность Храма', 'Настоятели Храма', 'Фотоархив', 'Видеоархив', 'Аудиоархив']},
-				{ name:'Новости'},
-				{ name:'Проповедь', hidden: ['Проповедь Патриарха', 'Проповедь Митрополита', 'Проповедь Священника', 'Проповедь Настоятеля']},
+				{ name:'Летопись храма', hidden:['Основание Храма', 'Современность Храма', { name:'Настоятели Храма', link:'abbots.html'}, 'Фотоархив', 'Видеоархив', 'Аудиоархив']},
+				{ name:'Новости', link: 'news.html'},
+				{ name:'Проповедь', hidden: [{ name:'Проповедь Патриарха', link:'preaching.html'}, 'Проповедь Митрополита', 'Проповедь Священника', 'Проповедь Настоятеля']},
 				{ name:'Библиотека', hidden: ['Библия', 'Богословие', 'Статьи', 'Жития святых', 'Художественная классика', 'Иконопись']},
 				{ name:'Прихожанину', hidden: ['Святыни и иконы', 'Расписание богослужений', 'Предстоящие события', 'Тюремное служение',
 				'Социальное служение', 'Молодежное служение', 'Катехизация', 'Часто задаваемые вопросы', 'Православный календарь']},
 				{ name:'Воскресная школа', hidden: ['О Воскресной школе', 'Новости школы', 'Фото и видео']},
-				{ name:'Контакты'}]
+				{ name:'Контакты', link: 'contacts.html'}]
 			li.menu__list-item
 				button.button.menu__close
 					svg.menu__icon
@@ -23,11 +23,18 @@ nav.menu.page__menu
 						span.menu__link #{elem.name}
 						ul.list.menu__list-hidden
 							for elem1 in elem.hidden
-								li.menu__list-hidden-item: a.link.menu__hidden-link(href="#") #{elem1}
+								li.menu__list-hidden-item
+								if elem1.name
+									a.link.menu__hidden-link(href=elem1.link) #{elem1.name}
+								else
+									a.link.menu__hidden-link(href="#") #{elem1}
 						svg.menu__icon.menu__icon-accordion
 							use(xlink:href="images/sprite.svg#icon-arrow-point-to-down")
 					else
-						a.menu__link(href="#") #{elem.name}
+						if elem.link
+							a.menu__link(href=elem.link) #{elem.name}
+						else
+							a.menu__link(href="#") #{elem.name}
 		div.menu__buttons
 			button.button.menu__search-button
 				svg.menu__icon

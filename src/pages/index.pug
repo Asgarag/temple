@@ -80,7 +80,7 @@ block content
 		}
 		]
 	div.page__inner
-		main.main
+		main.main.page__main
 			div.main__inner
 				div.owl-carousel.main__owl-carousel
 					div.owl-carousel__imgbox
@@ -102,7 +102,7 @@ block content
 								Обращение настоятеля храма к прихожанам.
 								В карусель также можно вынести самые важные новости, статьи, объявления, праздники.
 				article.calendar.main__calendar
-					h2.title.title--m.title--line Сегодня
+					h2.title.title--m.title--line.calendar__title Сегодня
 					a.calendar__container(href="#")
 						div.calendar__date
 							time.calendar__new-date(datetime="2018-02-01")
@@ -117,7 +117,7 @@ block content
 						span.calendar__fasting Поста нет
 			div.main__inner
 				article.schedule.main__schedule
-					h2.title.title--m.title--line Расписание богослужений
+					h2.title.title--m.title--line.schedule__title Расписание богослужений
 					div.schedule__container
 						div.schedule__days
 							span.schedule__days-name по будням
@@ -163,7 +163,7 @@ block content
 										img.last-news__img(src=elem.img, alt=elem.alt1)
 									div.last-news__inner
 										time.last-news__date(datetime=elem.date_1) #{elem.date}
-										h3.title.title--s
+										h3.title.title--s.last-news__post-title
 											a.last-news__link(href="#") #{elem.title}
 								div.last-news__description
 									p #{elem.description}

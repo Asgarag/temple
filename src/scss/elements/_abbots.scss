@@ -9,10 +9,30 @@
 	}
 }
 
+.abbots__title {
+	margin-bottom: 2rem;
+}
+
 .abbots__avatarbox {
 	width: 140px;
 	flex-shrink: 0;
 	margin-right: 2rem;
+	position: relative;
+
+	&::before{
+		content: "";
+		position: relative;
+		display: block;
+		padding-left: 100%;
+		padding-top: 100%;
+		background-color: $blue;
+	}
+}
+
+.abbots__avatar {
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 .abbots__name {

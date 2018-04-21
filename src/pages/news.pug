@@ -5,7 +5,7 @@ block title
 
 block content
 	-
-		var breadcrumbs = [{name: 'Главная', flag: 1}, {name: 'Новости', flag: 0}]
+		var breadcrumbs = [{name: 'Главная', flag: 1, link: "index.html"}, {name: 'Новости', flag: 0}]
 		var news = [
 		{
 		date: '28 января 2018 г.',
@@ -68,19 +68,11 @@ block content
 		alt1: "Совещание"
 		}
 		]
-		var pagination = [{number: '1', flag: 0}, {number: '2', flag: 1}, {number: '3', flag: 1}, {number: '4', flag: 1}, {number: '5', flag: 1}, {number: '6', flag: 1}, {number: '...', flag: 1}, {number: '10', flag: 1}]
-	nav.breadcrumbs
-		ul.list.breadcrumbs__list
-			for elem in breadcrumbs
-				li.breadcrumbs__list-item
-					if elem.flag === 1
-						a.breadcrumbs__link(href="#") #{elem.name}
-					else
-						span.breadcrumbs__link-active #{elem.name}
+	include layout/breadcrumbs
 	div.page__inner
-		main.main
+		main.main.page__main
 			section.last-news
-				h2.title.title--m.title--line.last-news__title Последние новости
+				h1.title.title--m.title--line.last-news__title Последние новости
 				div.last-news__tabs
 					span.last-news__tab.last-news__active-tab новости храма
 					a.link.last-news__tab(href="#") новости епархии
@@ -94,16 +86,9 @@ block content
 									img.last-news__img(src="images/delete/news-" + elem.img + ".jpg", alt=elem.alt1)
 								div.last-news__inner
 									time.last-news__date(datetime=elem.date_1) #{elem.date}
-									h3.title.title--s.last-news__title
+									h3.title.title--s.last-news__post-title
 										a.last-news__link(href="#") #{elem.title}
 									div.last-news__description
 										p #{elem.description}
-				nav.pagination
-					ul.list.pagination__list
-						for elem in pagination
-							li.pagination__list-item
-								if elem.flag === 1
-									a.link.pagination__link(href="#") #{elem.number}
-								else
-									span.pagination__link-active #{elem.number}
+				include layout/pagination
 		include layout/sidebar
