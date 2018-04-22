@@ -1,0 +1,40 @@
+extends layout/layout
+
+block title
+	title О Воскресенной школе
+
+block content
+	-
+		var breadcrumbs = [{name: 'Главная', flag: 1, link: "index.html"}, {name: 'Воскресная школа', flag: 0}, {name: 'О Воскресной школе', flag: 0}]
+	include layout/breadcrumbs
+	div.container.page__inner
+		main.page__main
+			h1.title.title--m.title--line.page__title О Воскресной школе
+			div.page__content
+				div.school
+					div.school__logobox
+						img.school__logo(src="images/logo_school.png", alt="Азбука веры. Воскресная школа для детей")
+					div.school__imgbox
+						img.school__img(src="images/delete/school.jpg", alt="Дети")
+					div.school__info
+						span.school__organization-name Воскресная школа для детей при храме святителя Николая чудотворца "АЗБУКА ВЕРЫ"
+						div.school__about
+							span.school__name Как добраться:
+							span.school__value мкр. Терновка, остановка: Дом культуры. Автобусы: 54, 66, маршрутки: 49, 10, 17.
+						div.school__about
+							span.school__name Директор школы
+							span.school__value Лазарева Анна Петровна.
+						div.school__about
+							span.school__name Дни занятий:
+							span.school__value суббота, воскресенье.
+						div.school__about
+							span.school__text Воскресная школа при храме ведет активную работу. В ней обучается 80-85 детей, от 5 до 16 лет.
+							span.school__text Суббота - с 10-00 до 11-00 - группа раннего развития для дошкольников.
+							span.school__text Занятия ведет преподаватель начальных классов Карнушина Нина Петровна.
+							span.school__text Воскресенье - с 11-00 до 13-00.
+							span.school__text Занятия преподаются по обязательным дисциплинам: Закон Божий, Церковное хоровое пение, детское православное творчество.
+							span.school__text Занятия бесплатные. Преподаватели со специальным образованием и опытом работы.
+							span.school__text Школа участвует в городских православных фестивалях, епархиальных мероприятиях.
+							span.school__text Для определения ребенка в воскресную школу необходимо подать заявление, которое можно заполнить у директора воскресной школы Лазаревой Анны Петровны в храме и в воскресной школе.
+						span.school__question По всем вопросам можно обращаться по телефону +7-905-015-98-10
+		include layout/sidebar

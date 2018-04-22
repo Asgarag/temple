@@ -1,0 +1,83 @@
+@import "../variables";
+
+.post__date {
+	display: block;
+	color: $gray;
+	margin-bottom: 1.5rem;
+}
+
+.post__link {
+	color: $black;
+	text-decoration: none;
+
+	&:hover,
+	&:focus {
+		text-decoration: underline;
+		color: $blue;
+	}
+}
+
+.post__description {
+	margin-top: 3rem;
+	font-weight: 300;
+
+	&--big {
+		font-size: 1.6rem;
+		padding-bottom: 2.4rem;
+		position: relative;
+		margin-bottom: 3rem;
+
+		&::after {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			height: 1px;
+			width: 66%;
+			background-color: $gray;
+		}
+	}
+}
+
+.post__imgbox--big {
+	max-width: 461px;
+	margin-bottom: 3rem;
+	position: relative;
+
+	&::before{
+		content: "";
+		position: relative;
+		display: block;
+		padding-left: 100%;
+		padding-top: 60%;
+		background-color: $blue;
+	}
+
+	.post__img {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+
+.post__gallery {
+	margin-bottom: 4.5rem;
+}
+
+@media (max-width: 479px) {
+	.post__imgbox--small {
+		margin-bottom: 1rem;
+	}
+}
+
+@media (min-width: 480px) {
+	.post__wrapper {
+		display: flex;
+	}
+
+	.post__imgbox--small {
+		width: 200px;
+		margin-right: 2rem;
+		flex-shrink: 0;
+	}
+}

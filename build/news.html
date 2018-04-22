@@ -12,7 +12,7 @@
       <div class="page__container">
         <div class="content">
           <header class="header"><img class="header__logo" src="images/logo_nikola.png" alt="Храм святителя Николая"></header>
-          <nav class="menu page__menu">
+          <nav class="menu">
             <div class="container menu__container">
               <ul class="list menu__list">
                 <li class="menu__list-item">
@@ -27,7 +27,7 @@
                     <li class="menu__list-hidden-item"></li><a class="link menu__hidden-link" href="#">Основание Храма</a>
                     <li class="menu__list-hidden-item"></li><a class="link menu__hidden-link" href="#">Современность Храма</a>
                     <li class="menu__list-hidden-item"></li><a class="link menu__hidden-link" href="abbots.html">Настоятели Храма</a>
-                    <li class="menu__list-hidden-item"></li><a class="link menu__hidden-link" href="#">Фотоархив</a>
+                    <li class="menu__list-hidden-item"></li><a class="link menu__hidden-link" href="foto.html">Фотоархив</a>
                     <li class="menu__list-hidden-item"></li><a class="link menu__hidden-link" href="#">Видеоархив</a>
                     <li class="menu__list-hidden-item"></li><a class="link menu__hidden-link" href="#">Аудиоархив</a>
                   </ul>
@@ -39,10 +39,10 @@
                 </li>
                 <li class="menu__list-item"><span class="menu__link">Проповедь</span>
                   <ul class="list menu__list-hidden">
-                    <li class="menu__list-hidden-item"></li><a class="link menu__hidden-link" href="preaching.html">Проповедь Патриарха</a>
-                    <li class="menu__list-hidden-item"></li><a class="link menu__hidden-link" href="#">Проповедь Митрополита</a>
-                    <li class="menu__list-hidden-item"></li><a class="link menu__hidden-link" href="#">Проповедь Священника</a>
-                    <li class="menu__list-hidden-item"></li><a class="link menu__hidden-link" href="#">Проповедь Настоятеля</a>
+                    <li class="menu__list-hidden-item"></li><a class="link menu__hidden-link" href="preaching_pat.html">Проповедь Патриарха</a>
+                    <li class="menu__list-hidden-item"></li><a class="link menu__hidden-link" href="preaching_mit.html">Проповедь Митрополита</a>
+                    <li class="menu__list-hidden-item"></li><a class="link menu__hidden-link" href="preaching_sv.html">Проповедь Священника</a>
+                    <li class="menu__list-hidden-item"></li><a class="link menu__hidden-link" href="preaching_nas.html">Проповедь Настоятеля</a>
                   </ul>
                   <svg class="menu__icon menu__icon-accordion">
                     <use xlink:href="images/sprite.svg#icon-arrow-point-to-down"></use>
@@ -70,7 +70,7 @@
                     <li class="menu__list-hidden-item"></li><a class="link menu__hidden-link" href="#">Социальное служение</a>
                     <li class="menu__list-hidden-item"></li><a class="link menu__hidden-link" href="#">Молодежное служение</a>
                     <li class="menu__list-hidden-item"></li><a class="link menu__hidden-link" href="#">Катехизация</a>
-                    <li class="menu__list-hidden-item"></li><a class="link menu__hidden-link" href="#">Часто задаваемые вопросы</a>
+                    <li class="menu__list-hidden-item"></li><a class="link menu__hidden-link" href="faq.html">Часто задаваемые вопросы</a>
                     <li class="menu__list-hidden-item"></li><a class="link menu__hidden-link" href="#">Православный календарь</a>
                   </ul>
                   <svg class="menu__icon menu__icon-accordion">
@@ -79,7 +79,7 @@
                 </li>
                 <li class="menu__list-item"><span class="menu__link">Воскресная школа</span>
                   <ul class="list menu__list-hidden">
-                    <li class="menu__list-hidden-item"></li><a class="link menu__hidden-link" href="#">О Воскресной школе</a>
+                    <li class="menu__list-hidden-item"></li><a class="link menu__hidden-link" href="school.html">О Воскресной школе</a>
                     <li class="menu__list-hidden-item"></li><a class="link menu__hidden-link" href="#">Новости школы</a>
                     <li class="menu__list-hidden-item"></li><a class="link menu__hidden-link" href="#">Фото и видео</a>
                   </ul>
@@ -110,147 +110,145 @@
               </form>
             </div>
           </nav>
-          <div class="container">
-            <nav class="breadcrumbs page__breadcrumbs">
-              <ul class="list breadcrumbs__list">
-                <li class="breadcrumbs__list-item"><a class="breadcrumbs__link" href="index.html">Главная</a>
-                </li>
-                <li class="breadcrumbs__list-item"><span class="breadcrumbs__link-active">Новости</span>
-                </li>
-              </ul>
-            </nav>
-            <div class="page__inner">
-              <main class="main page__main">
-                <section class="last-news">
-                  <h1 class="title title--m title--line last-news__title">Последние новости</h1>
-                  <div class="last-news__tabs"><span class="last-news__tab last-news__active-tab">новости храма</span><a class="link last-news__tab" href="#">новости епархии</a><a class="link last-news__tab" href="#">новости патриархии</a><a class="link last-news__tab" href="#">сми о нас</a></div>
-                  <div class="last-news__group">
-                    <article class="last-news__post">
-                      <wrapper class="last-news__post-wrapper">
-                        <div class="last-news__imgbox"><img class="last-news__img" src="images/delete/news-1.jpg" alt="Люди на празднике"></div>
-                        <div class="last-news__inner">
-                          <time class="last-news__date" datetime="2018-01-28">28 января 2018 г.</time>
-                          <h3 class="title title--s last-news__post-title"><a class="last-news__link" href="#">Иерей Сергий Беляков принял участие в спортивном празднике «Зимушка-зима»</a></h3>
-                          <div class="last-news__description">
-                            <p>В воскресенье, 28 января 2018 года, в Пензенском Центральном парке культуры и отдыха имени В.Г.Белинского состоялся большой спортивный праздник «Зимушка-зима».</p>
-                          </div>
+          <nav class="breadcrumbs container page__breadcrumbs">
+            <ul class="list breadcrumbs__list">
+              <li class="breadcrumbs__list-item"><a class="breadcrumbs__link" href="index.html">Главная</a>
+              </li>
+              <li class="breadcrumbs__list-item"><span class="breadcrumbs__link-active">Новости</span>
+              </li>
+            </ul>
+          </nav>
+          <div class="container page__inner">
+            <main class="page__main">
+              <h1 class="title title--m title--line page__title">Последние новости</h1>
+              <div class="page__content">
+                <div class="tabs"><span class="tab tab--active">новости храма</span><a class="link tab" href="#">новости епархии</a><a class="link tab" href="#">новости патриархии</a><a class="link tab" href="#">сми о нас</a></div>
+                <div class="page__groups">
+                  <article class="post page__group">
+                    <div class="post__wrapper">
+                      <div class="post__imgbox post__imgbox--small"><img class="post__img" src="images/delete/news-1.jpg" alt="Люди на празднике"></div>
+                      <div class="post__inner">
+                        <time class="post__date" datetime="2018-01-28">28 января 2018 г.</time>
+                        <h3 class="title title--s post__title"><a class="post__link" href="post.html">Иерей Сергий Беляков принял участие в спортивном празднике «Зимушка-зима»</a></h3>
+                        <div class="post__description">
+                          <p>В воскресенье, 28 января 2018 года, в Пензенском Центральном парке культуры и отдыха имени В.Г.Белинского состоялся большой спортивный праздник «Зимушка-зима».</p>
                         </div>
-                      </wrapper>
-                    </article>
-                    <article class="last-news__post">
-                      <wrapper class="last-news__post-wrapper">
-                        <div class="last-news__imgbox"><img class="last-news__img" src="images/delete/news-2.jpg" alt="Священники перед чашей"></div>
-                        <div class="last-news__inner">
-                          <time class="last-news__date" datetime="2018-01-27">27 января 2018 г.</time>
-                          <h3 class="title title--s last-news__post-title"><a class="last-news__link" href="#">Протоиерей Александр Филиппов совершил водосвятный молебен с акафистом Божией Матери перед ее чудотворным образом &quot;Неупиваемая чаша&quot;.</a></h3>
-                          <div class="last-news__description">
-                            <p>В субботу 27 января 2018 года, по завершении Божественной Литургии, настоятель нашего храма протоиерей Александр Филиппов совершил водосвятный молебен с акафистом Божией Матери перед ее чудотворным образом &quot;Неупиваемая чаша&quot;.</p>
-                          </div>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="post page__group">
+                    <div class="post__wrapper">
+                      <div class="post__imgbox post__imgbox--small"><img class="post__img" src="images/delete/news-2.jpg" alt="Священники перед чашей"></div>
+                      <div class="post__inner">
+                        <time class="post__date" datetime="2018-01-27">27 января 2018 г.</time>
+                        <h3 class="title title--s post__title"><a class="post__link" href="post.html">Протоиерей Александр Филиппов совершил водосвятный молебен с акафистом Божией Матери перед ее чудотворным образом &quot;Неупиваемая чаша&quot;.</a></h3>
+                        <div class="post__description">
+                          <p>В субботу 27 января 2018 года, по завершении Божественной Литургии, настоятель нашего храма протоиерей Александр Филиппов совершил водосвятный молебен с акафистом Божией Матери перед ее чудотворным образом &quot;Неупиваемая чаша&quot;.</p>
                         </div>
-                      </wrapper>
-                    </article>
-                    <article class="last-news__post">
-                      <wrapper class="last-news__post-wrapper">
-                        <div class="last-news__imgbox"><img class="last-news__img" src="images/delete/news-3.jpg" alt="Совещание"></div>
-                        <div class="last-news__inner">
-                          <time class="last-news__date" datetime="2018-02-16">16 февраля 2018 г.</time>
-                          <h3 class="title title--s last-news__post-title"><a class="last-news__link" href="#">Протоиерей Антоний Шварев принял участие в круглом столе «Проблемы духовного окормления осужденных и лиц, содержащихся под стражей в учреждениях УИС».</a></h3>
-                          <div class="last-news__description">
-                            <p>Руководство УФСИН России по Пензенской области в режиме видеоконференцсвязи приняло участие в совещании по вопросам взаимодействия уголовно-исполнительной системы с традиционными религиозными концессиями, которое состоялось в Федеральной службе исполнения наказаний и транслировалось из Москвы во все территориальные органы УИС.</p>
-                          </div>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="post page__group">
+                    <div class="post__wrapper">
+                      <div class="post__imgbox post__imgbox--small"><img class="post__img" src="images/delete/news-3.jpg" alt="Совещание"></div>
+                      <div class="post__inner">
+                        <time class="post__date" datetime="2018-02-16">16 февраля 2018 г.</time>
+                        <h3 class="title title--s post__title"><a class="post__link" href="post.html">Протоиерей Антоний Шварев принял участие в круглом столе «Проблемы духовного окормления осужденных и лиц, содержащихся под стражей в учреждениях УИС».</a></h3>
+                        <div class="post__description">
+                          <p>Руководство УФСИН России по Пензенской области в режиме видеоконференцсвязи приняло участие в совещании по вопросам взаимодействия уголовно-исполнительной системы с традиционными религиозными концессиями, которое состоялось в Федеральной службе исполнения наказаний и транслировалось из Москвы во все территориальные органы УИС.</p>
                         </div>
-                      </wrapper>
-                    </article>
-                    <article class="last-news__post">
-                      <wrapper class="last-news__post-wrapper">
-                        <div class="last-news__imgbox"><img class="last-news__img" src="images/delete/news-4.jpg" alt="Люди на празднике"></div>
-                        <div class="last-news__inner">
-                          <time class="last-news__date" datetime="2018-01-27">27 января 2018 г.</time>
-                          <h3 class="title title--s last-news__post-title"><a class="last-news__link" href="#">Священник нашего храма посетил приходское общество трезвости.</a></h3>
-                          <div class="last-news__description">
-                            <p>В Петропавловском храме города Пензы существует приходское общество трезвости, которым руководит протоиерей Алексий Горшков. Он имеет личный опыт трезвой жизни и к нему иногда обращаются за консультацией священнослужители нашей епархии. На этот раз к нему обратился клирик нашего храма иерей Сергий Беляков.</p>
-                          </div>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="post page__group">
+                    <div class="post__wrapper">
+                      <div class="post__imgbox post__imgbox--small"><img class="post__img" src="images/delete/news-4.jpg" alt="Люди на празднике"></div>
+                      <div class="post__inner">
+                        <time class="post__date" datetime="2018-01-27">27 января 2018 г.</time>
+                        <h3 class="title title--s post__title"><a class="post__link" href="post.html">Священник нашего храма посетил приходское общество трезвости.</a></h3>
+                        <div class="post__description">
+                          <p>В Петропавловском храме города Пензы существует приходское общество трезвости, которым руководит протоиерей Алексий Горшков. Он имеет личный опыт трезвой жизни и к нему иногда обращаются за консультацией священнослужители нашей епархии. На этот раз к нему обратился клирик нашего храма иерей Сергий Беляков.</p>
                         </div>
-                      </wrapper>
-                    </article>
-                    <article class="last-news__post">
-                      <wrapper class="last-news__post-wrapper">
-                        <div class="last-news__imgbox"><img class="last-news__img" src="images/delete/news-4.jpg" alt="Люди на празднике"></div>
-                        <div class="last-news__inner">
-                          <time class="last-news__date" datetime="2018-01-28">28 января 2018 г.</time>
-                          <h3 class="title title--s last-news__post-title"><a class="last-news__link" href="#">Иерей Сергий Беляков принял участие в спортивном празднике «Зимушка-зима»</a></h3>
-                          <div class="last-news__description">
-                            <p>В воскресенье, 28 января 2018 года, в Пензенском Центральном парке культуры и отдыха имени В.Г.Белинского состоялся большой спортивный праздник «Зимушка-зима».</p>
-                          </div>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="post page__group">
+                    <div class="post__wrapper">
+                      <div class="post__imgbox post__imgbox--small"><img class="post__img" src="images/delete/news-4.jpg" alt="Люди на празднике"></div>
+                      <div class="post__inner">
+                        <time class="post__date" datetime="2018-01-28">28 января 2018 г.</time>
+                        <h3 class="title title--s post__title"><a class="post__link" href="post.html">Иерей Сергий Беляков принял участие в спортивном празднике «Зимушка-зима»</a></h3>
+                        <div class="post__description">
+                          <p>В воскресенье, 28 января 2018 года, в Пензенском Центральном парке культуры и отдыха имени В.Г.Белинского состоялся большой спортивный праздник «Зимушка-зима».</p>
                         </div>
-                      </wrapper>
-                    </article>
-                    <article class="last-news__post">
-                      <wrapper class="last-news__post-wrapper">
-                        <div class="last-news__imgbox"><img class="last-news__img" src="images/delete/news-5.jpg" alt="Священники перед чашей"></div>
-                        <div class="last-news__inner">
-                          <time class="last-news__date" datetime="2018-01-27">27 января 2018 г.</time>
-                          <h3 class="title title--s last-news__post-title"><a class="last-news__link" href="#">Протоиерей Александр Филиппов совершил водосвятный молебен с акафистом Божией Матери перед ее чудотворным образом &quot;Неупиваемая чаша&quot;.</a></h3>
-                          <div class="last-news__description">
-                            <p>В субботу 27 января 2018 года, по завершении Божественной Литургии, настоятель нашего храма протоиерей Александр Филиппов совершил водосвятный молебен с акафистом Божией Матери перед ее чудотворным образом &quot;Неупиваемая чаша&quot;.</p>
-                          </div>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="post page__group">
+                    <div class="post__wrapper">
+                      <div class="post__imgbox post__imgbox--small"><img class="post__img" src="images/delete/news-5.jpg" alt="Священники перед чашей"></div>
+                      <div class="post__inner">
+                        <time class="post__date" datetime="2018-01-27">27 января 2018 г.</time>
+                        <h3 class="title title--s post__title"><a class="post__link" href="post.html">Протоиерей Александр Филиппов совершил водосвятный молебен с акафистом Божией Матери перед ее чудотворным образом &quot;Неупиваемая чаша&quot;.</a></h3>
+                        <div class="post__description">
+                          <p>В субботу 27 января 2018 года, по завершении Божественной Литургии, настоятель нашего храма протоиерей Александр Филиппов совершил водосвятный молебен с акафистом Божией Матери перед ее чудотворным образом &quot;Неупиваемая чаша&quot;.</p>
                         </div>
-                      </wrapper>
-                    </article>
-                    <article class="last-news__post">
-                      <wrapper class="last-news__post-wrapper">
-                        <div class="last-news__imgbox"><img class="last-news__img" src="images/delete/news-6.jpg" alt="Совещание"></div>
-                        <div class="last-news__inner">
-                          <time class="last-news__date" datetime="2018-02-16">16 февраля 2018 г.</time>
-                          <h3 class="title title--s last-news__post-title"><a class="last-news__link" href="#">Протоиерей Антоний Шварев принял участие в круглом столе «Проблемы духовного окормления осужденных и лиц, содержащихся под стражей в учреждениях УИС».</a></h3>
-                          <div class="last-news__description">
-                            <p>Руководство УФСИН России по Пензенской области в режиме видеоконференцсвязи приняло участие в совещании по вопросам взаимодействия уголовно-исполнительной системы с традиционными религиозными концессиями, которое состоялось в Федеральной службе исполнения наказаний и транслировалось из Москвы во все территориальные органы УИС.</p>
-                          </div>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="post page__group">
+                    <div class="post__wrapper">
+                      <div class="post__imgbox post__imgbox--small"><img class="post__img" src="images/delete/news-6.jpg" alt="Совещание"></div>
+                      <div class="post__inner">
+                        <time class="post__date" datetime="2018-02-16">16 февраля 2018 г.</time>
+                        <h3 class="title title--s post__title"><a class="post__link" href="post.html">Протоиерей Антоний Шварев принял участие в круглом столе «Проблемы духовного окормления осужденных и лиц, содержащихся под стражей в учреждениях УИС».</a></h3>
+                        <div class="post__description">
+                          <p>Руководство УФСИН России по Пензенской области в режиме видеоконференцсвязи приняло участие в совещании по вопросам взаимодействия уголовно-исполнительной системы с традиционными религиозными концессиями, которое состоялось в Федеральной службе исполнения наказаний и транслировалось из Москвы во все территориальные органы УИС.</p>
                         </div>
-                      </wrapper>
-                    </article>
-                  </div>
-                  <nav class="pagination">
-                    <ul class="list pagination__list">
-                      <li class="pagination__list-item"><span class="pagination__link-active">1</span>
-                      </li>
-                      <li class="pagination__list-item"><a class="link pagination__link" href="#">2</a>
-                      </li>
-                      <li class="pagination__list-item"><a class="link pagination__link" href="#">3</a>
-                      </li>
-                      <li class="pagination__list-item"><a class="link pagination__link" href="#">4</a>
-                      </li>
-                      <li class="pagination__list-item"><a class="link pagination__link" href="#">5</a>
-                      </li>
-                      <li class="pagination__list-item"><a class="link pagination__link" href="#">6</a>
-                      </li>
-                      <li class="pagination__list-item"><a class="link pagination__link" href="#">...</a>
-                      </li>
-                      <li class="pagination__list-item"><a class="link pagination__link" href="#">10</a>
-                      </li>
-                    </ul>
-                  </nav>
-                </section>
-              </main>
-              <aside class="sidebar page__sidebar">
-                <article class="calendar sidebar__calendar">
-                  <h2 class="title title--m title--line calendar__title">Сегодня</h2><a class="calendar__container" href="#">
-                    <div class="calendar__date">
-                      <time class="calendar__new-date" datetime="2018-02-01"><span class="calendar__date-day">1</span><span class="calendar__date-month">февраля</span></time>
-                      <time class="calendar__old-date" datetime="2018-01-19"><span class="calendar__date-day">19</span><span class="calendar__date-month">января</span><span class="calendar__old-date-name">ст.ст.</span></time>
-                    </div><span class="calendar__name-day">четверг</span><span class="calendar__name-week">Седмица сплошная</span><span class="calendar__fasting">Поста нет</span></a>
-                </article>
-                <div class="sacrifice sacrifice--middle sidebar__sacrifice"><span class="sacrifice__preface">Дорогие братья и сестры!</span><span class="sacrifice__text">Молитвенно просим Вас внести свою лепту в дело возрождения исторической и духовной святыни - храма в честь святителя Николая чудотворца.</span>
-                  <button class="button button--blue button--middle sacrifice__button">Пожертвовать</button>
+                      </div>
+                    </div>
+                  </article>
                 </div>
-                <div class="question question--middle sidebar__question">
-                  <button class="link button question__button" type="button">Задать вопрос настоятелю</button>
-                  <svg class="question__icon">
-                    <use xlink:href="images/sprite.svg#icon-question"></use>
-                  </svg>
-                </div>
-              </aside>
-            </div>
+                <nav class="pagination">
+                  <ul class="list pagination__list">
+                    <li class="pagination__list-item"><span class="pagination__link-active">1</span>
+                    </li>
+                    <li class="pagination__list-item"><a class="link pagination__link" href="#">2</a>
+                    </li>
+                    <li class="pagination__list-item"><a class="link pagination__link" href="#">3</a>
+                    </li>
+                    <li class="pagination__list-item"><a class="link pagination__link" href="#">4</a>
+                    </li>
+                    <li class="pagination__list-item"><a class="link pagination__link" href="#">5</a>
+                    </li>
+                    <li class="pagination__list-item"><a class="link pagination__link" href="#">6</a>
+                    </li>
+                    <li class="pagination__list-item"><a class="link pagination__link" href="#">...</a>
+                    </li>
+                    <li class="pagination__list-item"><a class="link pagination__link" href="#">10</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </main>
+            <aside class="sidebar page__sidebar">
+              <article class="calendar sidebar__calendar">
+                <h2 class="title title--m title--line calendar__title">Сегодня</h2><a class="calendar__container" href="#">
+                  <div class="calendar__date">
+                    <time class="calendar__new-date" datetime="2018-02-01"><span class="calendar__date-day">1</span><span class="calendar__date-month">февраля</span></time>
+                    <time class="calendar__old-date" datetime="2018-01-19"><span class="calendar__date-day">19</span><span class="calendar__date-month">января</span><span class="calendar__old-date-name">ст.ст.</span></time>
+                  </div><span class="calendar__name-day">четверг</span><span class="calendar__name-week">Седмица сплошная</span><span class="calendar__fasting">Поста нет</span></a>
+              </article>
+              <div class="sacrifice sacrifice--middle sidebar__sacrifice"><span class="sacrifice__preface">Дорогие братья и сестры!</span><span class="sacrifice__text">Молитвенно просим Вас внести свою лепту в дело возрождения исторической и духовной святыни - храма в честь святителя Николая чудотворца.</span>
+                <button class="button button--blue button--middle sacrifice__button">Пожертвовать</button>
+              </div>
+              <div class="question question--middle sidebar__question">
+                <button class="link button question__button" type="button">Задать вопрос настоятелю</button>
+                <svg class="question__icon">
+                  <use xlink:href="images/sprite.svg#icon-question"></use>
+                </svg>
+              </div>
+            </aside>
           </div>
         </div>
         <footer class="footer">

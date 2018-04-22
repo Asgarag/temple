@@ -4,4 +4,9 @@ $(document).ready(function () {
 	//= parts/search.js
 	//= parts/menu.js
 	//= parts/modal.js
+	//= parts/jquery.photoswipe-global.js
+	//= parts/gallery.js
+	//= parts/chosen.jquery.min.js
+	//= parts/chosen.js
+	//= parts/faq.js
 });

@@ -1,11 +1,11 @@
 extends layout/layout
 
 block title
-	title Проповедь
+	title Проповедь Священника
 
 block content
 	-
-		var breadcrumbs = [{name: 'Главная', flag: 1, link: "index.html"}, {name: 'Проповедь', flag: 0}, {name: 'Проповедь Патриарха', flag: 0}]
+		var breadcrumbs = [{name: 'Главная', flag: 1, link: "index.html"}, {name: 'Проповедь', flag: 0}, {name: 'Проповедь Священника', flag: 0}]
 		var news = [
 		{
 		date: '8 апреля 2018 г.',
@@ -51,21 +51,21 @@ block content
 		}
 		]
 	include layout/breadcrumbs
-	div.page__inner
-		main.main.page__main
-			section.preaching
-				h1.title.title--m.title--line.preaching__title Проповедь Патриарха
-				div.preaching__group
+	div.container.page__inner
+		main.page__main
+			h1.title.title--m.title--line.page__title Проповедь Священника
+			div.page__content
+				div.page__groups
 					for elem in news
-						article.preaching__post
-							wrapper.preaching__post-wrapper
-								div.preaching__imgbox
-									img.preaching__img(src="images/delete/news-2.jpg", alt="Проповедь")
-								div.preaching__inner
-									time.preaching__date(datetime=elem.date_1) #{elem.date}
-									h3.title.title--s.preaching__post-title
-										a.preaching__link(href="#") #{elem.title}
-									div.preaching__description
+						article.post.page__group
+							div.post__wrapper
+								div.post__imgbox.post__imgbox--small
+									img.post__img(src="images/delete/news-2.jpg", alt="Проповедь")
+								div.post__inner
+									time.post__date(datetime=elem.date_1) #{elem.date}
+									h3.title.title--s.post__title
+										a.post__link(href="#") #{elem.title}
+									div.post__description
 										p #{elem.description}
-				include layout/pagination
+					include layout/pagination
 		include layout/sidebar

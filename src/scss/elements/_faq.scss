@@ -1,0 +1,36 @@
+@import "../variables";
+
+.faq__ask {
+	font-weight: 700;
+}
+
+.faq__button {
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+.faq__questions {
+	margin-top: 2.5rem;
+}
+
+.faq__question:not(:last-child) {
+	margin-bottom: 2rem;
+}
+
+.faq__question-name {
+	font-weight: 700;
+	font-size: 1.4rem;
+	text-decoration: underline;
+	text-align: left;
+
+	&--active {
+		color: inherit;
+		text-decoration: none;
+	}
+}
+
+.faq__question-value {
+	margin-left: 3rem;
+	margin-top: 1rem;
+	font-weight: 300;
+}

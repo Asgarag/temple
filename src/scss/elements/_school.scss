@@ -1,0 +1,57 @@
+@import "../variables";
+
+.school__logobox {
+	max-width: 315px;
+	margin-bottom: 2rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.school__imgbox {
+	max-width: 701px;
+	margin-bottom: 2rem;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+
+	&::before{
+		content: "";
+		position: relative;
+		display: block;
+		padding-left: 100%;
+		padding-top: 53.5%;
+		background-color: $blue;
+	}
+}
+
+.school__img {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.school__about {
+	margin-bottom: 1rem;
+}
+
+.school__organization-name {
+	font-weight: 700;
+	font-size: 1.6rem;
+	display: block;
+	margin-bottom: 2rem;
+}
+
+.school__name {
+	font-weight: 700;
+	margin-right: .5rem;
+}
+
+.school__text:not(:last-child) {
+	display: block;
+	margin-bottom: 1rem;
+}
+
+.school__question {
+	font-size: 1.6rem;
+	font-weight: 700;
+}

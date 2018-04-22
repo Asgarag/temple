@@ -1,9 +1,5 @@
 @import "../variables";
 
-.contacts__title {
-	margin-bottom: 4rem;
-}
-
 .contacts__organization {
 	display: block;
 	margin-bottom: 2rem;
@@ -40,21 +36,17 @@
 .contacts__bank-details {
 	display: block;
 
-	&:not(:last-child) {
+	&:not(:last-of-type) {
 		margin-bottom: .5rem;
 	}
 }
 
-.contacts__group {
-	margin-top: 4.5rem;
+.contacts__info {
+	margin-bottom: 4.5rem;
 }
 
-.contacts__item {
+.contacts__people {
 	text-align: center;
-
-	&:not(:first-child) {
-		margin-top: 5rem;
-	}
 }
 
 .contacts__imgbox {
@@ -62,6 +54,22 @@
 	margin-bottom: 2rem;
 	margin-left: auto;
 	margin-right: auto;
+	position: relative;
+
+	&::before{
+		content: "";
+		position: relative;
+		display: block;
+		padding-left: 100%;
+		padding-top: 157%;
+		background-color: $blue;
+	}
+}
+
+.contacts__img {
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 .contacts__name {
@@ -79,24 +87,4 @@
 	height: 15px;
 	fill: $gray;
 	margin-right: 1rem;
-}
-
-@media (min-width: 600px) {
-	.contacts__item {
-		width: 30%;
-
-		&:not(:nth-child(3n+4)) {
-			margin-right: 5%;
-		}
-
-		&:first-child {
-			width: 100%;
-			margin-right: 0;
-		}
-	}
-
-	.contacts__group {
-		display: flex;
-		flex-wrap: wrap;
-	}
 }

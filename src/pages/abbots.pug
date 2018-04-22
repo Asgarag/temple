@@ -8,12 +8,12 @@ block content
 		var breadcrumbs = [{name: 'Главная', flag: 1, link: "index.html"}, {name: 'Летопись Храма', flag: 0}, {name: 'Настоятели Храма', flag: 0}]
 		var abbots = ['с 1847 по 1880 год', 'с 1880 по 1895 год', 'с 1895 по 1910 год', 'с 1910 по 1930 год']
 	include layout/breadcrumbs
-	div.page__inner
-		main.main.page__main
-			section.abbots
-				h1.title.title--line.title--m.abbots__title Настоятели Храма
+	div.container.page__inner
+		main.page__main
+			h1.title.title--line.title--m.page__title Настоятели Храма
+			div.page__content.page__groups
 				for elem in abbots
-					div.abbots__item
+					div.abbots.page__group
 						div.abbots__avatarbox
 							img.abbots__avatar(src="/images/delete/contact-1_cr.jpg", alt="Портрет Протоиерия Александра Филиппова")
 						div.abbots__inner

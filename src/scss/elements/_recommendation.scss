@@ -1,18 +1,5 @@
 @import "../variables";
 
-.recommendation__container {
-	padding: 2.5rem;
-	background-color: $beige;
-}
-
-.recommendation__group {
-	margin-bottom: 5rem;
-}
-
-.recommendation__item:not(:last-child) {
-	margin-bottom: 4rem;
-}
-
 .recommendation__author {
 	font-size: 1.2rem;
 	color: $gray;

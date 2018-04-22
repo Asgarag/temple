@@ -1,0 +1,16 @@
+@import "../variables";
+
+.section__title {
+	margin-bottom: 4rem;
+}
+
+.section__container {
+	padding: 2.5rem;
+	background-color: $beige;
+}
+
+.section__link {
+	display: inline-block;
+	margin-top: 3rem;
+	text-decoration: none;
+}

@@ -69,26 +69,26 @@ block content
 		}
 		]
 	include layout/breadcrumbs
-	div.page__inner
-		main.main.page__main
-			section.last-news
-				h1.title.title--m.title--line.last-news__title Последние новости
-				div.last-news__tabs
-					span.last-news__tab.last-news__active-tab новости храма
-					a.link.last-news__tab(href="#") новости епархии
-					a.link.last-news__tab(href="#") новости патриархии
-					a.link.last-news__tab(href="#") сми о нас
-				div.last-news__group
+	div.container.page__inner
+		main.page__main
+			h1.title.title--m.title--line.page__title Последние новости
+			div.page__content
+				div.tabs
+					span.tab.tab--active новости храма
+					a.link.tab(href="#") новости епархии
+					a.link.tab(href="#") новости патриархии
+					a.link.tab(href="#") сми о нас
+				div.page__groups
 					for elem in news
-						article.last-news__post
-							wrapper.last-news__post-wrapper
-								div.last-news__imgbox
-									img.last-news__img(src="images/delete/news-" + elem.img + ".jpg", alt=elem.alt1)
-								div.last-news__inner
-									time.last-news__date(datetime=elem.date_1) #{elem.date}
-									h3.title.title--s.last-news__post-title
-										a.last-news__link(href="#") #{elem.title}
-									div.last-news__description
+						article.post.page__group
+							div.post__wrapper
+								div.post__imgbox.post__imgbox--small
+									img.post__img(src="images/delete/news-" + elem.img + ".jpg", alt=elem.alt1)
+								div.post__inner
+									time.post__date(datetime=elem.date_1) #{elem.date}
+									h3.title.title--s.post__title
+										a.post__link(href="post.html") #{elem.title}
+									div.post__description
 										p #{elem.description}
 				include layout/pagination
 		include layout/sidebar

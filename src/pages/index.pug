@@ -79,108 +79,110 @@ block content
 		description: 'Толкование на Евангелия от Иоанна, составленные по древним святоотеческим толкованиям византийским, 12 века, ученым монахом Евфимием Зигабеном / перевод с греческого.'
 		}
 		]
-	div.page__inner
-		main.main.page__main
-			div.main__inner
-				div.owl-carousel.main__owl-carousel
-					div.owl-carousel__imgbox
-						img.owl-carousel__img(src="images/delete/main_slider_photo_ch.jpg", alt="Служение")
-						div.owl-carousel__description
-							p.
-								Обращение настоятеля храма к прихожанам.
-								В карусель также можно вынести самые важные новости, статьи, объявления, праздники.
-					div.owl-carousel__imgbox
-						img.owl-carousel__img(src="images/delete/news-1-ch.jpg", alt="Праздник")
-						div.owl-carousel__description
-							p.
-								Обращение настоятеля храма к прихожанам.
-								В карусель также можно вынести самые важные новости, статьи, объявления, праздники.
-					div.owl-carousel__imgbox
-						img.owl-carousel__img(src="images/delete/news-2-ch.jpg", alt="Служение")
-						div.owl-carousel__description
-							p.
-								Обращение настоятеля храма к прихожанам.
-								В карусель также можно вынести самые важные новости, статьи, объявления, праздники.
-				article.calendar.main__calendar
-					h2.title.title--m.title--line.calendar__title Сегодня
-					a.calendar__container(href="#")
-						div.calendar__date
-							time.calendar__new-date(datetime="2018-02-01")
-								span.calendar__date-day 1
-								span.calendar__date-month февраля
-							time.calendar__old-date(datetime="2018-01-19")
-								span.calendar__date-day 19
-								span.calendar__date-month января
-								span.calendar__old-date-name ст.ст.
-						span.calendar__name-day четверг
-						span.calendar__name-week Седмица сплошная
-						span.calendar__fasting Поста нет
-			div.main__inner
-				article.schedule.main__schedule
-					h2.title.title--m.title--line.schedule__title Расписание богослужений
-					div.schedule__container
-						div.schedule__days
-							span.schedule__days-name по будням
-							ul.list.schedule__list
-							for elem in schedule__weekdays
-								div.schedule__list-item
-									span.schedule__time #{elem.times}
-									span.schedule__name  - #{elem.name}
-						div.schedule__days
-							span.schedule__days-name по праздничным и воскресным дням
-							ul.list.schedule__list
-							for elem in schedule__holidays
-								div.schedule__list-item
-									span.schedule__time #{elem.times}
-									span.schedule__name  - #{elem.name}
-				div.sacrifice.sacrifice--big.main__sacrifice
-					span.sacrifice__preface Дорогие братья и сестры!
-					span.sacrifice__text Молитвенно просим Вас внести свою лепту в дело возрождения исторической и духовной святыни - храма в честь святителя Николая чудотворца.
-					button.button.button--blue.button--big.sacrifice__button Пожертвовать
-			div.main__inner
-				div.quote.main__quote
-					svg.quote__icon
-						use(xlink:href="images/sprite.svg#icon-quotation-mark")
-					span.quote__text Посылаемое все надобно принимать, как от руки Господней: скорбное ли - к терпению, приятное ли - к благодарению.
-					span.qoute__author прп. Моисей Оптинский
-				div.question.question--big.main__question
-					button.link.button.question__button(type="button") Задать вопрос настоятелю
-					svg.question__icon
-						use(xlink:href="images/sprite.svg#icon-question")
-			div.main__inner
-				section.last-news.main__last-news
-					h2.title.title--m.title--line.last-news__title Последние новости
-					div.last-news__tabs
-						span.last-news__tab.last-news__active-tab новости храма
-						a.link.last-news__tab(href="#") новости епархии
-						a.link.last-news__tab(href="#") новости патриархии
-						a.link.last-news__tab(href="#") сми о нас
-					div.last-news__group
-						for elem in news
-							article.last-news__post
-								div.last-news__post-wrapper
-									div.last-news__imgbox
-										img.last-news__img(src=elem.img, alt=elem.alt1)
-									div.last-news__inner
-										time.last-news__date(datetime=elem.date_1) #{elem.date}
-										h3.title.title--s.last-news__post-title
-											a.last-news__link(href="#") #{elem.title}
-								div.last-news__description
-									p #{elem.description}
-					button.button.button--blue.button--big.last-news__button Все новости
-				section.recommendation
-					h2.title.title--m.title--line.recommendation__title Рекомендуем прочитать
-					div.recommendation__container
-						div.recommendation__group
-							for elem in recommendation
-								div.recommendation__item
-									span.recommendation__author #{elem.author}
-									h3.title.title--ms.recommendation__title #{elem.title}
-									div.recommendation__description
-										p #{elem.description}
-									div.recommendation__links
-										div.recommendation__linkbox
-											a.link.recommendation__link(href="#") Читать онлайн
-										div.recommendation__linkbox
-											a.link.recommendation__link(href="#") Скачать
-						button.button.button--blue.button--big Все материалы
+	div.container.page__inner
+		main.page__main
+			div.page__content
+				div.page__groups
+					div.page__group.page__group--flex
+						div.owl-carousel.page__owl-carousel
+							div.owl-carousel__imgbox
+								img.owl-carousel__img(src="images/delete/main_slider_photo_ch.jpg", alt="Служение")
+								div.owl-carousel__description
+									p.
+										Обращение настоятеля храма к прихожанам.
+										В карусель также можно вынести самые важные новости, статьи, объявления, праздники.
+							div.owl-carousel__imgbox
+								img.owl-carousel__img(src="images/delete/news-1-ch.jpg", alt="Праздник")
+								div.owl-carousel__description
+									p.
+										Обращение настоятеля храма к прихожанам.
+										В карусель также можно вынести самые важные новости, статьи, объявления, праздники.
+							div.owl-carousel__imgbox
+								img.owl-carousel__img(src="images/delete/news-2-ch.jpg", alt="Служение")
+								div.owl-carousel__description
+									p.
+										Обращение настоятеля храма к прихожанам.
+										В карусель также можно вынести самые важные новости, статьи, объявления, праздники.
+						article.calendar.page__calendar
+							h2.title.title--m.title--line.calendar__title Сегодня
+							a.calendar__container(href="#")
+								div.calendar__date
+									time.calendar__new-date(datetime="2018-02-01")
+										span.calendar__date-day 1
+										span.calendar__date-month февраля
+									time.calendar__old-date(datetime="2018-01-19")
+										span.calendar__date-day 19
+										span.calendar__date-month января
+										span.calendar__old-date-name ст.ст.
+								span.calendar__name-day четверг
+								span.calendar__name-week Седмица сплошная
+								span.calendar__fasting Поста нет
+					div.page__group.page__group--flex
+						article.schedule.page__schedule
+							h2.title.title--m.title--line.schedule__title Расписание богослужений
+							div.schedule__container
+								div.schedule__days
+									span.schedule__days-name по будням
+									ul.list.schedule__list
+									for elem in schedule__weekdays
+										div.schedule__list-item
+											span.schedule__time #{elem.times}
+											span.schedule__name  - #{elem.name}
+								div.schedule__days
+									span.schedule__days-name по праздничным и воскресным дням
+									ul.list.schedule__list
+									for elem in schedule__holidays
+										div.schedule__list-item
+											span.schedule__time #{elem.times}
+											span.schedule__name  - #{elem.name}
+						div.sacrifice.sacrifice--big.page__sacrifice
+							span.sacrifice__preface Дорогие братья и сестры!
+							span.sacrifice__text Молитвенно просим Вас внести свою лепту в дело возрождения исторической и духовной святыни - храма в честь святителя Николая чудотворца.
+							button.button.button--blue.button--big.sacrifice__button Пожертвовать
+					div.page__group.page__group--flex
+						div.quote.page__quote
+							svg.quote__icon
+								use(xlink:href="images/sprite.svg#icon-quotation-mark")
+							span.quote__text Посылаемое все надобно принимать, как от руки Господней: скорбное ли - к терпению, приятное ли - к благодарению.
+							span.qoute__author прп. Моисей Оптинский
+						div.question.question--big.page__question
+							button.link.button.question__button(type="button") Задать вопрос настоятелю
+							svg.question__icon
+								use(xlink:href="images/sprite.svg#icon-question")
+					div.page__group.page__group--flex
+						section.section.page__last-news
+							h2.title.title--m.title--line.section__title Последние новости
+							div.tabs
+								span.tab.tab--active новости храма
+								a.link.tab(href="#") новости епархии
+								a.link.tab(href="#") новости патриархии
+								a.link.tab(href="#") сми о нас
+							div.page__groups
+								for elem in news
+									article.post.page__group
+										div.post__wrapper
+											div.post__imgbox.post__imgbox--small
+												img.post__img(src=elem.img, alt=elem.alt1)
+											div.post__inner
+												time.post__date(datetime=elem.date_1) #{elem.date}
+												h3.title.title--s.post__title
+													a.post__link(href="post.html") #{elem.title}
+										div.post__description
+											p #{elem.description}
+							a.button.button--blue.button--big.section__link(href="news.html") Все новости
+						section.section.page__recommendation
+							h2.title.title--m.title--line.section__title Рекомендуем прочитать
+							div.section__container
+								div.page__groups
+									for elem in recommendation
+										div.recommendation.page__group
+											span.recommendation__author #{elem.author}
+											h3.title.title--ms.recommendation__title #{elem.title}
+											div.recommendation__description
+												p #{elem.description}
+											div.recommendation__links
+												div.recommendation__linkbox
+													a.link.recommendation__link(href="#") Читать онлайн
+												div.recommendation__linkbox
+													a.link.recommendation__link(href="#") Скачать
+								a.button.button--blue.button--big.section__link(href="#") Все материалы

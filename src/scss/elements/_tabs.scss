@@ -1,0 +1,15 @@
+@import "../variables";
+
+.tabs {
+	font-size: 1.2rem;
+	display: flex;
+	margin-bottom: 4rem;
+}
+
+.tab:not(:last-child) {
+	margin-right: 2rem;
+}
+
+.tab--active {
+	color: $gray;
+}
