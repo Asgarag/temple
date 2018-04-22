@@ -24,10 +24,10 @@ nav.menu
 						ul.list.menu__list-hidden
 							for elem1 in elem.hidden
 								li.menu__list-hidden-item
-								if elem1.name
-									a.link.menu__hidden-link(href=elem1.link) #{elem1.name}
-								else
-									a.link.menu__hidden-link(href="#") #{elem1}
+									if elem1.name
+										a.link.menu__hidden-link(href=elem1.link) #{elem1.name}
+									else
+										a.link.menu__hidden-link(href="#") #{elem1}
 						svg.menu__icon.menu__icon-accordion
 							use(xlink:href="images/sprite.svg#icon-arrow-point-to-down")
 					else
