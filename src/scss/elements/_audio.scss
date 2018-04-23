@@ -1,0 +1,48 @@
+@import "../variables";
+
+.audio__wrapper {
+	display: flex;
+}
+
+.audio__icon {
+	width: 30px;
+	height: 30px;
+	fill: $blue;
+	flex-shrink: 0;
+	margin-right: 2rem;
+}
+
+.audio__name {
+	display: block;
+	font-weight: 700;
+	margin-bottom: 1rem;
+}
+
+.audio__time {
+	font-size: 1.2rem;
+	font-weight: 700;
+	margin-right: 2rem;
+	color: $gray;
+}
+
+.audio__play {
+	text-decoration: underline;
+	margin-right: 2rem;
+}
+
+.audio__download {
+	color: $gray;
+
+	&:hover,
+	&:focus {
+		text-decoration: none;
+	}
+}
+
+.audio__filebox {
+	margin-top: 2rem;
+}
+
+.audio__file {
+	width: 100%;
+}

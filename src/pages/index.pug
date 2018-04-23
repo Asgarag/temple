@@ -149,40 +149,40 @@ block content
 							button.link.button.question__button(type="button") Задать вопрос настоятелю
 							svg.question__icon
 								use(xlink:href="images/sprite.svg#icon-question")
-					div.page__group.page__group--flex
-						section.section.page__last-news
-							h2.title.title--m.title--line.section__title Последние новости
-							div.tabs
-								span.tab.tab--active новости храма
-								a.link.tab(href="#") новости епархии
-								a.link.tab(href="#") новости патриархии
-								a.link.tab(href="#") сми о нас
-							div.page__groups
-								for elem in news
-									article.post.page__group
-										div.post__wrapper
-											div.post__imgbox.post__imgbox--small
-												img.post__img(src=elem.img, alt=elem.alt1)
-											div.post__inner
-												time.post__date(datetime=elem.date_1) #{elem.date}
-												h3.title.title--s.post__title
-													a.post__link(href="post.html") #{elem.title}
-										div.post__description
-											p #{elem.description}
-							a.button.button--blue.button--big.section__link(href="news.html") Все новости
-						section.section.page__recommendation
-							h2.title.title--m.title--line.section__title Рекомендуем прочитать
-							div.section__container
-								div.page__groups
-									for elem in recommendation
-										div.recommendation.page__group
-											span.recommendation__author #{elem.author}
-											h3.title.title--ms.recommendation__title #{elem.title}
-											div.recommendation__description
-												p #{elem.description}
-											div.recommendation__links
-												div.recommendation__linkbox
-													a.link.recommendation__link(href="#") Читать онлайн
-												div.recommendation__linkbox
-													a.link.recommendation__link(href="#") Скачать
-								a.button.button--blue.button--big.section__link(href="#") Все материалы
+	div.container.page__sections
+		section.section.page__last-news
+			h2.title.title--m.title--line.section__title Последние новости
+			div.tabs
+				span.tab.tab--active новости храма
+				a.link.tab(href="#") новости епархии
+				a.link.tab(href="#") новости патриархии
+				a.link.tab(href="#") сми о нас
+			div.page__groups
+				for elem in news
+					article.post.page__group
+						div.post__wrapper
+							div.post__imgbox.post__imgbox--small
+								img.post__img(src=elem.img, alt=elem.alt1)
+							div.post__inner
+								time.post__date(datetime=elem.date_1) #{elem.date}
+								h3.title.title--s.post__title
+									a.post__link(href="post.html") #{elem.title}
+						div.post__description
+							p #{elem.description}
+			a.button.button--blue.button--big.section__link(href="news.html") Все новости
+		section.section.page__recommendation
+			h2.title.title--m.title--line.section__title Рекомендуем прочитать
+			div.section__container
+				div.page__groups
+					for elem in recommendation
+						div.recommendation.page__group
+							span.recommendation__author #{elem.author}
+							h3.title.title--ms.recommendation__title #{elem.title}
+							div.recommendation__description
+								p #{elem.description}
+							div.recommendation__links
+								div.recommendation__linkbox
+									a.link.recommendation__link(href="#") Читать онлайн
+								div.recommendation__linkbox
+									a.link.recommendation__link(href="#") Скачать
+				a.button.button--blue.button--big.section__link(href="#") Все материалы

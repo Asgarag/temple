@@ -30,6 +30,10 @@
 	margin-bottom: 5rem;
 }
 
+.page__sections {
+	margin-top: 7rem;
+}
+
 @media (max-width: 599px) {
 	.page__grid-group {
 		margin-top: 5rem;
@@ -43,15 +47,15 @@
 		&:not(:nth-child(3n)) {
 			margin-right: 5%;
 		}
+
+		&:nth-child(n+4) {
+			margin-top: 5rem;
+		}
 	}
 
 	.page__grid {
 		display: flex;
 		flex-wrap: wrap;
-	}
-
-	.page__grid-group:nth-child(n+4) {
-		margin-top: 5rem;
 	}
 }
 
@@ -126,6 +130,10 @@
 	}
 
 	.page__group--flex {
+		display: flex;
+	}
+
+	.page__sections {
 		display: flex;
 	}
 }

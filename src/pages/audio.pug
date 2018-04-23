@@ -1,0 +1,34 @@
+extends layout/layout
+
+block title
+	title Аудиоархив
+
+block content
+	-
+		var breadcrumbs = [{name: 'Главная', flag: 1, link: "index.html"}, {name: 'Летопись храма', flag: 0}, {name: 'Аудиоархив', flag: 0}]
+	include layout/breadcrumbs
+	div.container.page__inner
+		main.page__main
+			h1.title.title--m.title--line.page__title Аудиоархив
+			div.page__content
+				div.chosen.page__chosen
+					form.chosen__form(method="post", name="year")
+						span.chosen__name Год
+						select.chosen__select.chosen__select--xl
+							option 2011
+				div.audio
+					for elem in [1,2,3,4,5]
+						div.page__group
+							div.audio__wrapper
+								svg.audio__icon
+									use(xlink:href="images/sprite.svg#icon-play-button")
+								div.audio__inner
+									span.audio__name Сретение Господа Бога и Спаса нашего Иисуса Христа. Очень длинное название на двух строках.
+									div.audio__info
+										span.audio__time 03:10
+										button.button.link.audio__play(type="button") слушать
+										a.button.audio__download(href="#") скачать
+							div.audio__filebox
+								audio.audio__file(controls)
+									source(src="font/instrumental.mp3", type='audio/mpeg; codecs="mp3"')
+		include layout/sidebar

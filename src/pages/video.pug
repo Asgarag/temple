@@ -1,0 +1,55 @@
+extends layout/layout
+
+block title
+	title Видеоархив
+
+block content
+	-
+		var breadcrumbs = [{name: 'Главная', flag: 1, link: "index.html"}, {name: 'Летопись храма', flag: 0}, {name: 'Видеоархив', flag: 0}]
+	include layout/breadcrumbs
+	div.container.page__inner
+		main.page__main
+			h1.title.title--m.title--line.page__title Видеоархив
+			div.page__content
+				div.chosen.page__chosen
+					form.chosen__form(method="post", name="year")
+						span.chosen__name Год
+						select.chosen__select.chosen__select--xl
+							option 2011
+					form.chosen__form(method="post", name="type")
+						span.chosen__name Категория
+						select.chosen__select.chosen__select--xxl
+							option Престольный праздник
+				div.page__grid
+					div.video.page__grid-group
+						iframe.video__file(src="https://www.youtube.com/embed/YOMiHw7NQvw?rel=0&amp;showinfo=0", frameborder="0", allow="autoplay; encrypted-media", allowfullscreen)
+						div.video__container
+							span.video__name Реальный облик Иисуса Христа в 3D
+							a.link.video__link(href="https://www.youtube.com/watch?v=YOMiHw7NQvw", target="_blank") смотреть
+					div.video.page__grid-group
+						iframe.video__file(src="https://www.youtube.com/embed/8ZO0e7YwJq8?rel=0&amp;showinfo=0", frameborder="0", allow="autoplay; encrypted-media", allowfullscreen)
+						div.video__container
+							span.video__name Серафим Саровский. Рожденный Пламенным.
+							a.link.video__link(href="https://www.youtube.com/watch?v=8ZO0e7YwJq8", target="_blank") смотреть
+					div.video.page__grid-group
+						iframe.video__file(src="https://www.youtube.com/embed/Fhz54JAwJHo?rel=0&amp;showinfo=0", frameborder="0", allow="autoplay; encrypted-media", allowfullscreen)
+						div.video__container
+							span.video__name Учащиеся Воскресной школы.
+							a.link.video__link(href="https://www.youtube.com/watch?v=Fhz54JAwJHo", target="_blank") смотреть
+					div.video.page__grid-group
+						iframe.video__file(src="https://www.youtube.com/embed/YOMiHw7NQvw?rel=0&amp;showinfo=0", frameborder="0", allow="autoplay; encrypted-media", allowfullscreen)
+						div.video__container
+							span.video__name Реальный облик Иисуса Христа в 3D
+							a.link.video__link(href="https://www.youtube.com/watch?v=YOMiHw7NQvw", target="_blank") смотреть
+					div.video.page__grid-group
+						iframe.video__file(src="https://www.youtube.com/embed/8ZO0e7YwJq8?rel=0&amp;showinfo=0", frameborder="0", allow="autoplay; encrypted-media", allowfullscreen)
+						div.video__container
+							span.video__name Серафим Саровский. Рожденный Пламенным.
+							a.link.video__link(href="https://www.youtube.com/watch?v=8ZO0e7YwJq8", target="_blank") смотреть
+					div.video.page__grid-group
+						iframe.video__file(src="https://www.youtube.com/embed/Fhz54JAwJHo?rel=0&amp;showinfo=0", frameborder="0", allow="autoplay; encrypted-media", allowfullscreen)
+						div.video__container
+							span.video__name Учащиеся Воскресной школы.
+							a.link.video__link(href="https://www.youtube.com/watch?v=Fhz54JAwJHo", target="_blank") смотреть
+
+		include layout/sidebar

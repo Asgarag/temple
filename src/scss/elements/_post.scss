@@ -18,14 +18,13 @@
 }
 
 .post__description {
-	margin-top: 3rem;
+	margin-top: 2.5rem;
 	font-weight: 300;
 
 	&--big {
 		font-size: 1.6rem;
 		padding-bottom: 2.4rem;
 		position: relative;
-		margin-bottom: 3rem;
 
 		&::after {
 			content: '';
@@ -41,7 +40,6 @@
 
 .post__imgbox--big {
 	max-width: 461px;
-	margin-bottom: 3rem;
 	position: relative;
 
 	&::before{
@@ -60,8 +58,13 @@
 	}
 }
 
+.post__link-news {
+	display: block;
+	margin-top: 4.5rem;
+}
+
 .post__gallery {
-	margin-bottom: 4.5rem;
+	margin-top: 3rem;
 }
 
 @media (max-width: 479px) {

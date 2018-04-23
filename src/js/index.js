@@ -9,4 +9,5 @@ $(document).ready(function () {
 	//= parts/chosen.jquery.min.js
 	//= parts/chosen.js
 	//= parts/faq.js
+	//= parts/audio.js
 });

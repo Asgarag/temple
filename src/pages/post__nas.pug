@@ -1,0 +1,27 @@
+extends layout/layout
+
+block title
+	title Протоиерей Антоний Шварев освятили помещения филиалов уголовно-исполнительной инспекции.
+
+block content
+	-
+		var breadcrumbs = [{name: 'Главная', flag: 1, link: "index.html"}, {name: 'Новости', flag: 1, link: "news.html"}, {name: 'Протоиерей Антоний Шварев освятили помещения филиалов уголовно-исполнительной инспекции.', flag: 0}]
+	include layout/breadcrumbs
+	div.container.page__inner
+		main.page__main
+			h1.title.title--m.title--line.page__title Протоиерей Антоний Шварев освятили помещения филиалов уголовно-исполнительной инспекции.
+			div.page__content
+				div.post
+					time.post__date(datetime="2018-02-09") 9 февраля 2018 г.
+					div.post__imgbox.post__imgbox--big
+						img.post__img(src="images/delete/news-3-det.jpg", alt="Освящение помещения")
+					div.post__description.post__description--big
+						p Помощник начальника УФСИН по организации работы с верующими протоиерей Антоний Шварев совершил освящение помещений уголовно-исполнительной инспекции УФСИН России по Пензенской области и ее филиалов по Октябрьскому, Первомайскому, Железнодорожному и Ленинскому районам города Пензы.
+						p Чин освящения с совершением молебна проводится по инициативе руководства уголовно-исполнительной системы ежегодно.
+						p «Это очень хорошая традиция, все мы должны жить и работать с молитвой в душе, благодарить Бога за каждый прожитый день», - сказал протоиерей Антоний Шварев.
+					div.gallery.post__gallery
+						img.gallery__img(src="images/delete/news-3.jpg", alt="Праздник")
+						img.gallery__img(src="images/delete/news-4.jpg", alt="Праздник")
+						img.gallery__img(src="images/delete/news-5.jpg", alt="Праздник")
+					a.link.post__link-news(href="news.html") &lt; Ко всем проповедям настоятеля
+		include layout/sidebar

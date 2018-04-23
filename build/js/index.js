@@ -71,4 +71,8 @@ $(document).ready(function () {
 		$('.faq__question-value').not($(this).next()).slideUp();
 		$(this).toggleClass('faq__question-name--active').next().slideToggle();
 	});
+	$('.audio__filebox').slideUp();
+	$('.audio__play').click(function () {
+		$(this).parent().parent().parent().next().slideToggle();
+	});
 });
