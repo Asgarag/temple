@@ -17,6 +17,7 @@ var gulp = require('gulp'),
 	pug = require('gulp-pug'),
 	rigger = require('gulp-rigger'),
 	plumber = require('gulp-plumber'),
+	uglify = require('gulp-uglify'),
 	rename = require('gulp-rename');
 
 gulp.task('layout', function () {
@@ -59,6 +60,7 @@ gulp.task('scripts', function () {
 	return gulp.src(['src/js/index.js'])
 		.pipe(plumber())
 		.pipe(rigger())
+		.pipe(uglify())
 		.pipe(gulp.dest('build/js'))
 		.pipe(server.reload({stream: true}));
 });

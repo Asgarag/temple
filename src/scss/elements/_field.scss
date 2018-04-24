@@ -3,10 +3,16 @@
 .field {
 	display: block;
 
-	&--hidden {
+	&--hidden-hint {
 		.field__hint {
 			position: absolute;
 			left: -9999px;
+		}
+	}
+
+	&--blue {
+		.field__input:focus {
+			border-color: $blue;
 		}
 	}
 }
@@ -34,7 +40,7 @@
 	}
 
 	&:focus {
-		border-color: $blue;
+		border-color: darken($gray, 20%);
 		outline: none;
 	}
 }

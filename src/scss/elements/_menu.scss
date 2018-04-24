@@ -37,9 +37,16 @@
 	margin-right: 0.7rem;
 }
 
-.menu__search-submit {
-	font-weight: 700;
-	font-size: 1.2rem;
+.menu__switch:hover, .menu__switch:focus {
+	opacity: 0.8;
+}
+
+.menu__search-button:hover, .menu__search-button:focus {
+	opacity: 0.8;
+}
+
+.menu__search-input {
+	font-size: 1.4rem;
 }
 
 @media (max-width: 479px) {

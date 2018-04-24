@@ -4,6 +4,7 @@
 	display: block;
 	color: $gray;
 	margin-bottom: 1.5rem;
+	font-weight: 500;
 }
 
 .post__link {
@@ -19,7 +20,6 @@
 
 .post__description {
 	margin-top: 2.5rem;
-	font-weight: 300;
 
 	&--big {
 		font-size: 1.6rem;
@@ -27,7 +27,7 @@
 		position: relative;
 
 		&::after {
-			content: '';
+			content: "";
 			position: absolute;
 			left: 0;
 			bottom: 0;
@@ -38,29 +38,42 @@
 	}
 }
 
-.post__imgbox--big {
-	max-width: 461px;
+
+
+.post__imgbox {
 	position: relative;
 
-	&::before{
+	&::before {
 		content: "";
 		position: relative;
 		display: block;
 		padding-left: 100%;
-		padding-top: 60%;
 		background-color: $blue;
 	}
 
-	.post__img {
-		position: absolute;
-		top: 0;
-		left: 0;
+	&--small::before {
+		padding-top: 66%;
 	}
+
+	&--big {
+		max-width: 461px;
+
+		&::before {
+			padding-top: 60%;
+		}
+	}
+}
+
+.post__img {
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 .post__link-news {
 	display: block;
 	margin-top: 4.5rem;
+	font-weight: 700;
 }
 
 .post__gallery {

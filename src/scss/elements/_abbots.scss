@@ -3,10 +3,6 @@
 .abbots {
 	display: flex;
 	align-items: center;
-
-	&:not(:last-child) {
-		margin-bottom: 3rem;
-	}
 }
 
 .abbots__title {
@@ -15,11 +11,10 @@
 
 .abbots__avatarbox {
 	width: 140px;
-	flex-shrink: 0;
 	margin-right: 2rem;
 	position: relative;
 
-	&::before{
+	&::before {
 		content: "";
 		position: relative;
 		display: block;
@@ -39,5 +34,5 @@
 	font-size: 1.6rem;
 	font-weight: 700;
 	display: block;
-	margin-bottom: .5rem;
+	margin-bottom: 0.5rem;
 }

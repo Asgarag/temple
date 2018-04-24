@@ -4,22 +4,25 @@
 	display: flex;
 	font-size: 1.2rem;
 	color: $gray;
+	flex-wrap: wrap;
+	font-weight: 500;
 }
 
 .breadcrumbs__list-item:not(:last-child) {
-	margin-right: .5rem;
+	margin-right: 0.5rem;
 
 	&::after {
-		content: '/';
+		content: "/";
 		color: inherit;
-		margin-left: .3rem;
+		margin-left: 0.3rem;
 	}
 }
 
 .breadcrumbs__link {
 	color: inherit;
 
-	&:hover, &:focus {
+	&:hover,
+	&:focus {
 		text-decoration: none;
 	}
 }

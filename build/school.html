@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <link rel="stylesheet" href="css/style.css">
     <title>О Воскресенной школе</title>
   </head>
@@ -131,7 +131,7 @@
                 </button>
               </div>
               <form class="menu__search" action="#" name="search">
-                <label class="field field--hidden menu__search-field"><span class="field__hint">Поиск</span>
+                <label class="field field--hidden-hint field--blue menu__search-field"><span class="field__hint">Поиск</span>
                   <input class="field__input menu__search-input" name="search" placeholder="Поиск по сайту..." required>
                 </label>
                 <button class="button button--small button--blue menu__search-submit">Искать</button>
@@ -157,7 +157,7 @@
                   <div class="school__imgbox"><img class="school__img" src="images/delete/school.jpg" alt="Дети"></div>
                   <div class="school__info"><span class="school__organization-name">Воскресная школа для детей при храме святителя Николая чудотворца "АЗБУКА ВЕРЫ"</span>
                     <div class="school__about"><span class="school__name">Как добраться:</span><span class="school__value">мкр. Терновка, остановка: Дом культуры. Автобусы: 54, 66, маршрутки: 49, 10, 17.</span></div>
-                    <div class="school__about"><span class="school__name">Директор школы</span><span class="school__value">Лазарева Анна Петровна.</span></div>
+                    <div class="school__about"><span class="school__name">Директор школы:</span><span class="school__value">Лазарева Анна Петровна.</span></div>
                     <div class="school__about"><span class="school__name">Дни занятий:</span><span class="school__value">суббота, воскресенье.</span></div>
                     <div class="school__about"><span class="school__text">Воскресная школа при храме ведет активную работу. В ней обучается 80-85 детей, от 5 до 16 лет.</span><span class="school__text">Суббота - с 10-00 до 11-00 - группа раннего развития для дошкольников.</span><span class="school__text">Занятия ведет преподаватель начальных классов Карнушина Нина Петровна.</span><span class="school__text">Воскресенье - с 11-00 до 13-00.</span><span class="school__text">Занятия преподаются по обязательным дисциплинам: Закон Божий, Церковное хоровое пение, детское православное творчество.</span><span class="school__text">Занятия бесплатные. Преподаватели со специальным образованием и опытом работы.</span><span class="school__text">Школа участвует в городских православных фестивалях, епархиальных мероприятиях.</span><span class="school__text">Для определения ребенка в воскресную школу необходимо подать заявление, которое можно заполнить у директора воскресной школы Лазаревой Анны Петровны в храме и в воскресной школе.</span></div><span class="school__question">По всем вопросам можно обращаться по телефону +7-905-015-98-10</span>
                   </div>
@@ -220,14 +220,14 @@
               <button class="button modal__close">close modal</button>
               <h2 class="title title--m modal__title">Задать вопрос настоятелю</h2><span class="modal__answer">Возможно, у нас уже есть ответ в разделе<a class="link modal__link" href="#">Часто задаваемые вопросы</a></span>
               <form class="modal__form" name="question" method="post" action="#">
-                <label class="field modal__field"><span class="field__hint modal__hint">Как к Вам можно обращаться?</span>
-                  <input class="field__input" name="name" required>
+                <label class="field field--blue modal__field"><span class="field__hint modal__hint">Как к Вам можно обращаться?</span>
+                  <input class="field__input modal__input" name="name" required>
                 </label>
-                <label class="field modal__field"><span class="field__hint modal__hint">Адрес электронной почты</span>
-                  <input class="field__input" name="email" type="email" required>
+                <label class="field field--blue modal__field"><span class="field__hint modal__hint">Адрес электронной почты</span>
+                  <input class="field__input modal__input" name="email" type="email" required>
                 </label>
-                <label class="field modal__field"><span class="field__hint modal__hint">Ваш вопрос</span>
-                  <textarea class="textarea field__input" name="question" required></textarea>
+                <label class="field field--blue modal__field"><span class="field__hint modal__hint">Ваш вопрос</span>
+                  <textarea class="textarea field__input modal__input" name="question" required></textarea>
                 </label>
                 <div class="modal__buttonbox">
                   <button class="button button--blue button--middle">Задать вопрос</button>
@@ -238,7 +238,6 @@
         </div>
       </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/index.js"></script>
   </body>
 </html>

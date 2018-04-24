@@ -6,14 +6,14 @@ div.modal.modal--xl
 			span.modal__answer Возможно, у нас уже есть ответ в разделе
 				a.link.modal__link(href="#") Часто задаваемые вопросы
 			form.modal__form(name="question", method="post", action="#")
-				label.field.modal__field
+				label.field.field--blue.modal__field
 					span.field__hint.modal__hint Как к Вам можно обращаться?
-					input.field__input(name="name", required)
-				label.field.modal__field
+					input.field__input.modal__input(name="name", required)
+				label.field.field--blue.modal__field
 					span.field__hint.modal__hint Адрес электронной почты
-					input.field__input(name="email", type="email", required)
-				label.field.modal__field
+					input.field__input.modal__input(name="email", type="email", required)
+				label.field.field--blue.modal__field
 					span.field__hint.modal__hint Ваш вопрос
-					textarea.textarea.field__input(name="question", required)
+					textarea.textarea.field__input.modal__input(name="question", required)
 				div.modal__buttonbox
 					button.button.button--blue.button--middle Задать вопрос

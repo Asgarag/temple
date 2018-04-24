@@ -20,10 +20,14 @@
 }
 
 .recommendation__linkbox:not(:last-child) {
-	margin-right: .5rem;
+	margin-right: 0.5rem;
 
 	&::after {
-		content: '/';
-		margin-left: .5rem;
+		content: "/";
+		margin-left: 0.5rem;
 	}
+}
+
+.recommendation__link {
+	font-weight: 500;
 }

@@ -1,5 +1,9 @@
 @import "../variables";
 
+.contacts {
+	font-weight: 500;
+}
+
 .contacts__organization {
 	display: block;
 	margin-bottom: 2rem;
@@ -12,12 +16,12 @@
 	font-size: 1.6rem;
 
 	&:not(:last-child) {
-		margin-bottom: .5rem;
+		margin-bottom: 0.5rem;
 	}
 }
 
 .contacts__email-link {
-	margin-left: .5rem;
+	margin-left: 0.5rem;
 }
 
 .contacts__open {
@@ -37,7 +41,7 @@
 	display: block;
 
 	&:not(:last-of-type) {
-		margin-bottom: .5rem;
+		margin-bottom: 0.5rem;
 	}
 }
 
@@ -50,18 +54,18 @@
 }
 
 .contacts__imgbox {
-	max-width: 146px;
+	max-width: 145px;
 	margin-bottom: 2rem;
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
 
-	&::before{
+	&::before {
 		content: "";
 		position: relative;
 		display: block;
 		padding-left: 100%;
-		padding-top: 157%;
+		padding-top: 158%;
 		background-color: $blue;
 	}
 }

@@ -14,12 +14,12 @@
 	margin-right: auto;
 	position: relative;
 
-	&::before{
+	&::before {
 		content: "";
 		position: relative;
 		display: block;
 		padding-left: 100%;
-		padding-top: 53.5%;
+		padding-top: 53%;
 		background-color: $blue;
 	}
 }
@@ -43,7 +43,7 @@
 
 .school__name {
 	font-weight: 700;
-	margin-right: .5rem;
+	margin-right: 0.5rem;
 }
 
 .school__text:not(:last-child) {
