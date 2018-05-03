@@ -39,17 +39,14 @@
 
 .question__icon {
 	position: absolute;
-	width: 30px;
-	height: 30px;
-	fill: #d4d2d7;
 }
 
 @media (min-width: 840px) {
 	.question--middle {
-		max-width: 220px;
+		width: 220px;
 	}
 
 	.question--big {
-		max-width: 310px;
+		width: 300px;
 	}
 }

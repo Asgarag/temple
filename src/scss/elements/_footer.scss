@@ -52,7 +52,7 @@
 }
 
 .footer__social {
-	display: block;
+	display: inline-block;
 
 	&:hover > .footer__icon {
 		fill: $light-blue;

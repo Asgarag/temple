@@ -38,8 +38,6 @@
 	}
 }
 
-
-
 .post__imgbox {
 	position: relative;
 
@@ -55,12 +53,8 @@
 		padding-top: 66%;
 	}
 
-	&--big {
-		max-width: 461px;
-
-		&::before {
+	&--big::before {
 			padding-top: 60%;
-		}
 	}
 }
 

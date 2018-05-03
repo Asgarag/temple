@@ -281,21 +281,23 @@
 .owl-prev {
 	width: 25px;
 	height: 25px;
-	background-image: url("../images/left-arrow.svg");
+	background-image: url("../images/left-arrow.png");
 	margin-right: 1rem;
 
 	&:hover {
 		opacity: 0.8;
+		outline: none;
 	}
 }
 
 .owl-next {
 	width: 25px;
 	height: 25px;
-	background-image: url("../images/right-arrow.svg");
+	background-image: url("../images/right-arrow.png");
 
 	&:hover {
 		opacity: 0.8;
+		outline: none;
 	}
 }
 

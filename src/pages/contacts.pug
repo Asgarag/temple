@@ -8,6 +8,13 @@ block content
 		var breadcrumbs = [{name: 'Главная', flag: 1, link: "index.html"}, {name: 'Контакты', flag: 0}]
 		var contacts = [
 		{
+		name: 'Протоиерей Александр Филиппов',
+		tel: '+7-906-158-81-21',
+		src: 'images/delete/contact-1.jpg',
+		alt1: 'Портрет Протоиерия Александра Филиппова',
+		post: 'настоятель Никольской церкви'
+		},
+		{
 		name: 'Протоиерей Антоний Шварев',
 		tel: '+7-908-530-20-13',
 		src: 'images/delete/contact-2.jpg',
@@ -35,15 +42,13 @@ block content
 		name: 'Елена Юрьевна Чекунова',
 		post: 'помощник настоятеля по делам социального служения',
 		tel: '+7-937-405-20-14',
-		src: 'images/delete/contact-1.jpg',
+		src: 'images/delete/contact-6.jpg',
 		alt1: 'Портрет Елены Юрьевны Чекуновой'
 		},
 		{
 		name: 'Анна Петровна Лазарева',
 		post: 'директор воскресной школы',
-		tel: '+7-905-015-98-10',
-		src: 'images/delete/contact-1.jpg',
-		alt1: 'Портрет Анны Петровны Лазаревой'
+		tel: '+7-905-015-98-10'
 		}
 		]
 	include layout/breadcrumbs
@@ -64,26 +69,18 @@ block content
 						span.contacts__bank-details р/с: 40703810948000005766 в Пензенском ОСБ №8624
 						span.contacts__bank-details БИК: 045655635
 						span.contacts__bank-details к/с: 30101810000000000635
-					div.page__groups.contacts__people
-						div.page__group
-							div.contacts__imgbox
-								img.contacts__img(src='images/delete/contact-1.jpg', alt='Портрет Протоиерия Александра Филиппова')
-							div.contacts__about
-								span.contacts__name Протоиерей Александр Филиппов
-								span.contacts__post настоятель Никольской церкви
-							svg.contacts__icon
-								use(xlink:href="images/sprite.svg#icon-phone-receiver")
-							span.contacts__tel +7-906-158-81-21
-						div.page__grid
-							for elem in contacts
-								div.page__grid-group
+					div.contacts__groups
+						for elem in contacts
+							div.contacts__group
+								if elem.src
 									div.contacts__imgbox
 										img.contacts__img(src=elem.src, alt=elem.alt1)
-									div.contacts__about
-										span.contacts__name #{elem.name}
-										if elem.post
-											span.contacts__post #{elem.post}
-									svg.contacts__icon
-										use(xlink:href="images/sprite.svg#icon-phone-receiver")
-									span.contacts__tel #{elem.tel}
+								div.contacts__about
+									span.contacts__name #{elem.name}
+									if elem.post
+										span.contacts__post #{elem.post}
+									div.contacts__tel
+										svg.contacts__icon
+											use(xlink:href="images/sprite.svg#icon-phone-receiver")
+										span.contacts__tel-number #{elem.tel}
 		include layout/sidebar

@@ -49,22 +49,21 @@
 	margin-bottom: 4.5rem;
 }
 
-.contacts__people {
-	text-align: center;
+.contacts__group {
+	display: flex;
+	align-items: center;
 }
 
 .contacts__imgbox {
 	max-width: 145px;
-	margin-bottom: 2rem;
-	margin-left: auto;
-	margin-right: auto;
+	width: 100%;
+	flex-shrink: 0;
 	position: relative;
+	margin-right: 1.5rem;
 
 	&::before {
 		content: "";
-		position: relative;
 		display: block;
-		padding-left: 100%;
 		padding-top: 158%;
 		background-color: $blue;
 	}
@@ -82,13 +81,49 @@
 	font-size: 1.6rem;
 }
 
-.contacts__about {
-	margin-bottom: 1.5rem;
+.contacts__post {
+	display: block;
+	margin-top: 1rem;
 }
 
 .contacts__icon {
 	width: 15px;
 	height: 15px;
-	fill: $gray;
+	fill: $light-gray;
 	margin-right: 1rem;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.contacts__tel {
+	margin-top: 1.5rem;
+	position: relative;
+	padding-left: 2.5rem;
+}
+
+@media (max-width: 599px) {
+	.contacts__group {
+		margin-top: 5rem;
+	}
+}
+
+@media (min-width: 600px) {
+	.contacts__group {
+		width: 48%;
+
+		&:not(:nth-child(2n)) {
+			margin-right: 4%;
+		}
+
+		&:nth-child(n + 3) {
+			margin-top: 5rem;
+		}
+	}
+
+	.contacts__groups {
+		display: flex;
+		flex-wrap: wrap;
+	}
 }
