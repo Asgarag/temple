@@ -86,19 +86,21 @@ block content
 					div.page__group.page__group--flex
 						div.owl-carousel.page__owl-carousel
 							div.owl-carousel__imgbox
-								img.owl-carousel__img(src="images/delete/main_slider_photo_ch.jpg", alt="Служение")
+								picture.owl-carousel__img
+									source(srcset="images/delete/slider-1@700.jpg", media="(min-width: 1030px)")
+									source(srcset="images/delete/slider-1@500.jpg", media="(min-width: 840px)")
+									source(srcset="images/delete/slider-1@700.jpg", media="(min-width: 730px)")
+									img(src="images/delete/slider-1@500.jpg", alt="Собрание")
 								div.owl-carousel__description
 									p.
 										Обращение настоятеля храма к прихожанам.
 										В карусель также можно вынести самые важные новости, статьи, объявления, праздники.
 							div.owl-carousel__imgbox
-								img.owl-carousel__img(src="images/delete/news-1-ch.jpg", alt="Праздник")
-								div.owl-carousel__description
-									p.
-										Обращение настоятеля храма к прихожанам.
-										В карусель также можно вынести самые важные новости, статьи, объявления, праздники.
-							div.owl-carousel__imgbox
-								img.owl-carousel__img(src="images/delete/news-2-ch.jpg", alt="Служение")
+								picture.owl-carousel__img
+									source(srcset="images/delete/slider-2@700.jpg", media="(min-width: 1030px)")
+									source(srcset="images/delete/slider-2@500.jpg", media="(min-width: 840px)")
+									source(srcset="images/delete/slider-2@700.jpg", media="(min-width: 730px)")
+									img(src="images/delete/slider-2@500.jpg", alt="Праздник")
 								div.owl-carousel__description
 									p.
 										Обращение настоятеля храма к прихожанам.
@@ -147,7 +149,7 @@ block content
 							span.qoute__author прп. Моисей Оптинский
 						div.question.question--big.page__question
 							button.link.button.question__button(type="button") Задать вопрос настоятелю
-							img.question__icon(src="images/question.png")
+							img.question__icon(src="images/question.png", alt="Вопросительный знак")
 	div.container.page__sections
 		section.section.page__last-news
 			h2.title.title--m.title--line.section__title Последние новости

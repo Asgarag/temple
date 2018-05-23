@@ -257,15 +257,7 @@
 	position: relative;
 }
 
-.owl-carousel__img {
-	height: 300px;
-	display: block;
-}
-
 .owl-carousel__description {
-	position: absolute;
-	left: 0;
-	bottom: 0;
 	color: $white;
 	background: rgba($blue, 0.8);
 	padding: 2rem 4rem 2rem 2rem;
@@ -301,9 +293,12 @@
 	}
 }
 
-@media (min-width: 480px) {
+@media (min-width: 530px) {
 	.owl-carousel__description {
 		font-size: 1.6rem;
+		position: absolute;
+		left: 0;
+		bottom: 0;
 	}
 }
 
